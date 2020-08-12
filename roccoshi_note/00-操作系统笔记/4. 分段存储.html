@@ -1,0 +1,2118 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. 分段存储 · roccoshi-note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="roccoshi">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5. 内存管理.html" />
+    
+    
+    <link rel="prev" href="3. 分页存储.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">roccoshi_note</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    00-操作系统笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1. 信号量.html">
+            
+                <a href="1. 信号量.html">
+            
+                    
+                    1. 信号量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2. 死锁的检测和解除.html">
+            
+                <a href="2. 死锁的检测和解除.html">
+            
+                    
+                    2. 死锁的检测和解除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3. 分页存储.html">
+            
+                <a href="3. 分页存储.html">
+            
+                    
+                    3. 分页存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="4. 分段存储.html">
+            
+                <a href="4. 分段存储.html">
+            
+                    
+                    4. 分段存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5. 内存管理.html">
+            
+                <a href="5. 内存管理.html">
+            
+                    
+                    5. 内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6. 文件管理.html">
+            
+                <a href="6. 文件管理.html">
+            
+                    
+                    6. 文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7. 磁盘.html">
+            
+                <a href="7. 磁盘.html">
+            
+                    
+                    7. 磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="8. 设备管理.html">
+            
+                <a href="8. 设备管理.html">
+            
+                    
+                    8. 设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-计算机网络笔记/">
+            
+                <a href="../01-计算机网络笔记/">
+            
+                    
+                    01-计算机网络笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../01-计算机网络笔记/1. 物理层/">
+            
+                <a href="../01-计算机网络笔记/1. 物理层/">
+            
+                    
+                    1. 物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../01-计算机网络笔记/1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                <a href="../01-计算机网络笔记/1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                    
+                    1.1 码元, 波特, 速率, 带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../01-计算机网络笔记/1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                <a href="../01-计算机网络笔记/1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                    
+                    1.2 奈奎斯特定理和香农定理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../01-计算机网络笔记/1. 物理层/1.3 编码与调制.html">
+            
+                <a href="../01-计算机网络笔记/1. 物理层/1.3 编码与调制.html">
+            
+                    
+                    1.3 编码与调制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../01-计算机网络笔记/1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                <a href="../01-计算机网络笔记/1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                    
+                    1.4 传输介质 物理层设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../01-计算机网络笔记/2. 数据链路层/">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/">
+            
+                    
+                    2. 数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../01-计算机网络笔记/2. 数据链路层/2.1 数据链路层基本概念和功能.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.1 数据链路层基本概念和功能.html">
+            
+                    
+                    2.1 数据链路层基本概念和功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../01-计算机网络笔记/2. 数据链路层/2.2 封装成帧的几种方法.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.2 封装成帧的几种方法.html">
+            
+                    
+                    2.2 封装成帧的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../01-计算机网络笔记/2. 数据链路层/2.3 检错编码--CRC 奇偶校验码.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.3 检错编码--CRC 奇偶校验码.html">
+            
+                    
+                    2.3 检错编码: CRC冗余循环校验码 奇偶校验码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../01-计算机网络笔记/2. 数据链路层/2.4 纠错编码--海明码.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.4 纠错编码--海明码.html">
+            
+                    
+                    2.4 纠错编码: 海明码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/">
+            
+                    
+                    2.5 流量控制和可靠传输
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.5.1" data-path="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                    
+                    2.5.1 停止-等待协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5.2" data-path="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                    
+                    2.5.2 后退N帧协议GBN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5.3" data-path="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                    
+                    2.5.3 选择重传协议SR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/">
+            
+                    
+                    2.6 介质访问控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.6.1" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.html">
+            
+                    
+                    2.6.1 信道划分介质访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6.2" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.2 ALOHA协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.2 ALOHA协议.html">
+            
+                    
+                    2.6.2 ALOHA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6.3" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.3 CSMA协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.3 CSMA协议.html">
+            
+                    
+                    2.6.3 CSMA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6.4" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.4 CSMACD协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.4 CSMACD协议.html">
+            
+                    
+                    2.6.4 CSMA/CD协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6.5" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.5 CSMACA协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.5 CSMACA协议.html">
+            
+                    
+                    2.6.5 CSMA/CA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6.6" data-path="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.6 轮询访问介质访问控制.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.6 轮询访问介质访问控制.html">
+            
+                    
+                    2.6.6 轮询访问介质访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../01-计算机网络笔记/2. 数据链路层/2.7 局域网.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.7 局域网.html">
+            
+                    
+                    2.7 局域网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../01-计算机网络笔记/2. 数据链路层/2.8 广域网PPP协议HDLC协议.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.8 广域网PPP协议HDLC协议.html">
+            
+                    
+                    2.8 广域网PPP协议和HDLC协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../01-计算机网络笔记/2. 数据链路层/2.9 链路层设备--网桥交换机.html">
+            
+                <a href="../01-计算机网络笔记/2. 数据链路层/2.9 链路层设备--网桥交换机.html">
+            
+                    
+                    2.9 链路层设备--网桥交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01-计算机网络笔记/3. 网络层/">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/">
+            
+                    
+                    3. 网络层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../01-计算机网络笔记/3. 网络层/3.01 数据交换方式.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.01 数据交换方式.html">
+            
+                    
+                    3.1 数据交换方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../01-计算机网络笔记/3. 网络层/3.02 数据报和虚电路.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.02 数据报和虚电路.html">
+            
+                    
+                    3.2 数据报和虚电路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../01-计算机网络笔记/3. 网络层/3.03 IP数据报.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.03 IP数据报.html">
+            
+                    
+                    3.3 IP数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../01-计算机网络笔记/3. 网络层/3.04 IP地址.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.04 IP地址.html">
+            
+                    
+                    3.4 IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../01-计算机网络笔记/3. 网络层/3.05 网络地址转换NAT.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.05 网络地址转换NAT.html">
+            
+                    
+                    3.5 网络地址转换NAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../01-计算机网络笔记/3. 网络层/3.06 子网.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.06 子网.html">
+            
+                    
+                    3.6 子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../01-计算机网络笔记/3. 网络层/3.07 无分类编址CIDR.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.07 无分类编址CIDR.html">
+            
+                    
+                    3.7 无分类编制CIDR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../01-计算机网络笔记/3. 网络层/3.08 ARP协议.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.08 ARP协议.html">
+            
+                    
+                    3.8 ARP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../01-计算机网络笔记/3. 网络层/3.09 DHCP协议.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.09 DHCP协议.html">
+            
+                    
+                    3.9 DHCP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../01-计算机网络笔记/3. 网络层/3.10 ICMP协议.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.10 ICMP协议.html">
+            
+                    
+                    3.10 ICMP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../01-计算机网络笔记/3. 网络层/3.11 IPv6.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.11 IPv6.html">
+            
+                    
+                    3.11 IPv6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/">
+            
+                    
+                    3.12 路由算法和路由协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.12.1" data-path="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.1 RIP协议和距离向量算法.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.1 RIP协议和距离向量算法.html">
+            
+                    
+                    3.12.1 RIP协议和距离向量算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12.2" data-path="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.2 OSPF协议和链路状态算法.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.2 OSPF协议和链路状态算法.html">
+            
+                    
+                    3.12.2 OSPF协议和链路状态算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12.3" data-path="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.3 BGP协议.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.3 BGP协议.html">
+            
+                    
+                    3.12.3 BGP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12.4" data-path="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.4 三种路由协议的对比.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.4 三种路由协议的对比.html">
+            
+                    
+                    3.12.4 三种路由协议的对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../01-计算机网络笔记/3. 网络层/3.13 IP组播(多播">
+            
+                <span>
+            
+                    
+                    3.13 IP组播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../01-计算机网络笔记/3. 网络层/3.14 网络层设备.html">
+            
+                <a href="../01-计算机网络笔记/3. 网络层/3.14 网络层设备.html">
+            
+                    
+                    3.14 网络层设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../01-计算机网络笔记/4. 传输层/">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/">
+            
+                    
+                    4. 传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../01-计算机网络笔记/4. 传输层/4.1 UDP协议.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.1 UDP协议.html">
+            
+                    
+                    4.1 UDP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/">
+            
+                    
+                    4.2 TCP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.1 TCP特点和报文段格式.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.1 TCP特点和报文段格式.html">
+            
+                    
+                    4.2.1 TCP特点和报文段格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.2" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.2 TCP连接管理.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.2 TCP连接管理.html">
+            
+                    
+                    4.2.2 TCP连接管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.3" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.3 TCP可靠传输.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.3 TCP可靠传输.html">
+            
+                    
+                    4.2.3 TCP可靠传输
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.4" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.4 TCP流量控制.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.4 TCP流量控制.html">
+            
+                    
+                    4.2.4 TCP流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.5" data-path="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.5 TCP拥塞控制.html">
+            
+                <a href="../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.5 TCP拥塞控制.html">
+            
+                    
+                    4.2.5 TCP拥塞控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../01-计算机网络笔记/5. 应用层/">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/">
+            
+                    
+                    5. 应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../01-计算机网络笔记/5. 应用层/5.1 网络应用模型.html">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/5.1 网络应用模型.html">
+            
+                    
+                    5.1 网络应用模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../01-计算机网络笔记/5. 应用层/5.2 DNS系统.html">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/5.2 DNS系统.html">
+            
+                    
+                    5.2 DNS系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../01-计算机网络笔记/5. 应用层/5.3 FTP.html">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/5.3 FTP.html">
+            
+                    
+                    5.3 FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../01-计算机网络笔记/5. 应用层/5.4 电子邮件.html">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/5.4 电子邮件.html">
+            
+                    
+                    5.4 电子邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../01-计算机网络笔记/5. 应用层/5.5 HTTP.html">
+            
+                <a href="../01-计算机网络笔记/5. 应用层/5.5 HTTP.html">
+            
+                    
+                    5.5 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02-计算机组成原理/">
+            
+                <a href="../02-计算机组成原理/">
+            
+                    
+                    02-计算机组成原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../02-计算机组成原理/1. 绪论--冯诺依曼和Amdahl.html">
+            
+                <a href="../02-计算机组成原理/1. 绪论--冯诺依曼和Amdahl.html">
+            
+                    
+                    1. 绪论--冯诺依曼和Amdahl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02-计算机组成原理/2. 数据表示--编码/">
+            
+                <a href="../02-计算机组成原理/2. 数据表示--编码/">
+            
+                    
+                    2. 数据表示--编码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../02-计算机组成原理/2. 数据表示--编码/2.1 原码 补码 反码.html">
+            
+                <a href="../02-计算机组成原理/2. 数据表示--编码/2.1 原码 补码 反码.html">
+            
+                    
+                    2.1 原码, 补码, 反码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../02-计算机组成原理/2. 数据表示--编码/2.2 移码 浮点数 IEEE754.html">
+            
+                <a href="../02-计算机组成原理/2. 数据表示--编码/2.2 移码 浮点数 IEEE754.html">
+            
+                    
+                    2.2 移码 浮点数 IEEE754
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../02-计算机组成原理/2. 数据表示--编码/2.3 检错和纠错码.html">
+            
+                <a href="../02-计算机组成原理/2. 数据表示--编码/2.3 检错和纠错码.html">
+            
+                    
+                    2.3 检错和纠错码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../02-计算机组成原理/3. 运算方法与运算器/">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/">
+            
+                    
+                    3. 运算方法与运算器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/">
+            
+                    
+                    3.1 定点数运算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.1 加减运算.html">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.1 加减运算.html">
+            
+                    
+                    3.1.1 加减运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.2" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.2 乘法运算.html">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.2 乘法运算.html">
+            
+                    
+                    3.1.2 乘法运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.3" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.3 除法运算.html">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.3 除法运算.html">
+            
+                    
+                    3.1.3 除法运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/">
+            
+                    
+                    3.2 浮点数运算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.2.1" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.1 浮点数加减法.html">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.1 浮点数加减法.html">
+            
+                    
+                    3.1.1 浮点数加减法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.2" data-path="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.2 浮点数乘除法.html">
+            
+                <a href="../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.2 浮点数乘除法.html">
+            
+                    
+                    3.1.2 浮点数乘除法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../02-计算机组成原理/4. 存储系统/">
+            
+                <a href="../02-计算机组成原理/4. 存储系统/">
+            
+                    
+                    4. 存储系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../02-计算机组成原理/4. 存储系统/4.1 存储系统概述.html">
+            
+                <a href="../02-计算机组成原理/4. 存储系统/4.1 存储系统概述.html">
+            
+                    
+                    4.1 主存储器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.html">
+            
+                <a href="../02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.html">
+            
+                    
+                    4.3 Cache替换算法 性能计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../02-计算机组成原理/4. 存储系统/4.4 虚拟存储器.html">
+            
+                <a href="../02-计算机组成原理/4. 存储系统/4.4 虚拟存储器.html">
+            
+                    
+                    4.4 虚拟存储器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../02-计算机组成原理/4. 存储系统/4.5 磁盘.html">
+            
+                <a href="../02-计算机组成原理/4. 存储系统/4.5 磁盘.html">
+            
+                    
+                    4.5 磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../02-计算机组成原理/5. 指令系统/">
+            
+                <a href="../02-计算机组成原理/5. 指令系统/">
+            
+                    
+                    5. 指令系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../02-计算机组成原理/5. 指令系统/5.1 存储模式与指令的分类.html">
+            
+                <a href="../02-计算机组成原理/5. 指令系统/5.1 存储模式与指令的分类.html">
+            
+                    
+                    5.1 存储模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../02-计算机组成原理/5. 指令系统/5.2 指令设计.html">
+            
+                <a href="../02-计算机组成原理/5. 指令系统/5.2 指令设计.html">
+            
+                    
+                    5.2 指令设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../02-计算机组成原理/6. CPU/">
+            
+                <a href="../02-计算机组成原理/6. CPU/">
+            
+                    
+                    6. CPU
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../02-计算机组成原理/6. CPU/6.1 CPU的功能与结构.html">
+            
+                <a href="../02-计算机组成原理/6. CPU/6.1 CPU的功能与结构.html">
+            
+                    
+                    6.1 CPU的功能与结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="../02-计算机组成原理/6. CPU/6.2 微操作与微命令.html">
+            
+                <a href="../02-计算机组成原理/6. CPU/6.2 微操作与微命令.html">
+            
+                    
+                    6.2 微操作与微命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.3" data-path="../02-计算机组成原理/6. CPU/6.3 硬布线控制器设计.html">
+            
+                <a href="../02-计算机组成原理/6. CPU/6.3 硬布线控制器设计.html">
+            
+                    
+                    6.3 硬布线控制器设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.4" data-path="../02-计算机组成原理/6. CPU/6.4 微程序控制器设计.html">
+            
+                <a href="../02-计算机组成原理/6. CPU/6.4 微程序控制器设计.html">
+            
+                    
+                    6.4 微程序控制器设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.5" data-path="../02-计算机组成原理/6. CPU/6.5 CPU性能测量.html">
+            
+                <a href="../02-计算机组成原理/6. CPU/6.5 CPU性能测量.html">
+            
+                    
+                    6.5 CPU性能测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../02-计算机组成原理/7. 流水线/">
+            
+                <a href="../02-计算机组成原理/7. 流水线/">
+            
+                    
+                    7. 流水线
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="../02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.html">
+            
+                <a href="../02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.html">
+            
+                    
+                    7.1 流水线时空图和吞吐率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.2" data-path="../02-计算机组成原理/7. 流水线/7.2 加速比和效率.html">
+            
+                <a href="../02-计算机组成原理/7. 流水线/7.2 加速比和效率.html">
+            
+                    
+                    7.2 加速比和效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../02-计算机组成原理/8. 总线-IO-DMA.html">
+            
+                <a href="../02-计算机组成原理/8. 总线-IO-DMA.html">
+            
+                    
+                    8. 总线-IO-DMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../02-计算机组成原理/9. 通道 并行性.html">
+            
+                <a href="../02-计算机组成原理/9. 通道 并行性.html">
+            
+                    
+                    9. 通道 并行性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../02-计算机组成原理/车老师雨课堂习题.html">
+            
+                <a href="../02-计算机组成原理/车老师雨课堂习题.html">
+            
+                    
+                    雨课堂习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../03-Java学习/">
+            
+                <a href="../03-Java学习/">
+            
+                    
+                    03-Java学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../03-Java学习/01. JAVA的基本程序设计结构.html">
+            
+                <a href="../03-Java学习/01. JAVA的基本程序设计结构.html">
+            
+                    
+                    1. JAVA的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../03-Java学习/02. JAVA的类与对象.html">
+            
+                <a href="../03-Java学习/02. JAVA的类与对象.html">
+            
+                    
+                    2. JAVA的类与对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../03-Java学习/03. JAVA的继承---多态_抽象.html">
+            
+                <a href="../03-Java学习/03. JAVA的继承---多态_抽象.html">
+            
+                    
+                    3. JAVA的继承---多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../03-Java学习/04. ArrayList.html">
+            
+                <a href="../03-Java学习/04. ArrayList.html">
+            
+                    
+                    4. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../03-Java学习/05. String.html">
+            
+                <a href="../03-Java学习/05. String.html">
+            
+                    
+                    5. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../03-Java学习/06. 接口.html">
+            
+                <a href="../03-Java学习/06. 接口.html">
+            
+                    
+                    6. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../03-Java学习/07. Date,_DateFormat,_Calendar类.html">
+            
+                <a href="../03-Java学习/07. Date,_DateFormat,_Calendar类.html">
+            
+                    
+                    7. Date类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../03-Java学习/08. System类_StringBuilder.html">
+            
+                <a href="../03-Java学习/08. System类_StringBuilder.html">
+            
+                    
+                    8. System类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../03-Java学习/09. 包装类.html">
+            
+                <a href="../03-Java学习/09. 包装类.html">
+            
+                    
+                    9. 包装类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../03-Java学习/10. Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                <a href="../03-Java学习/10. Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                    
+                    10. 集合Collection iterator迭代器 foreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../03-Java学习/11. 泛型.html">
+            
+                <a href="../03-Java学习/11. 泛型.html">
+            
+                    
+                    11. 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../04-linux学习/">
+            
+                <a href="../04-linux学习/">
+            
+                    
+                    04-linux学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../04-linux学习/常用的linux命令/">
+            
+                <a href="../04-linux学习/常用的linux命令/">
+            
+                    
+                    常用的linux命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../05-github操作/">
+            
+                <a href="../05-github操作/">
+            
+                    
+                    05-github操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4. 分段存储</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#4-&#x5206;&#x6BB5;&#x5B58;&#x50A8;"><b></b>4. &#x5206;&#x6BB5;&#x5B58;&#x50A8;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><b></b>&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"><b></b>&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;:</a></li><li><span class="title-icon "></span><a href="#&#x6BB5;&#x8868;"><b></b>&#x6BB5;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x627E;&#x8FC7;&#x7A0B;"><b></b>&#x67E5;&#x627E;&#x8FC7;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;"><b></b>&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><b></b>&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x9875;-&#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;"><b></b>&#x5206;&#x9875;, &#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;"><b></b>&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x6BB5;&#x8868;-&#x9875;&#x8868;"><b></b>&#x6BB5;&#x8868;, &#x9875;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x627E;&#x8FC7;&#x7A0B;_1"><b></b>&#x67E5;&#x627E;&#x8FC7;&#x7A0B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x865A;&#x62DF;&#x5185;&#x5B58;"><b></b>&#x865A;&#x62DF;&#x5185;&#x5B58;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;-&#x7F3A;&#x70B9;"><b></b>&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;, &#x7F3A;&#x70B9;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><b></b>&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9875;&#x8868;&#x673A;&#x5236;"><b></b>&#x9875;&#x8868;&#x673A;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;"><b></b>&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;"><b></b>&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;"><b></b>&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;</a></li></ul></ul></ul></div><a href="#4-&#x5206;&#x6BB5;&#x5B58;&#x50A8;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="4-&#x5206;&#x6BB5;&#x5B58;&#x50A8;"><a name="4-&#x5206;&#x6BB5;&#x5B58;&#x50A8;" class="anchor-navigation-ex-anchor" href="#4-&#x5206;&#x6BB5;&#x5B58;&#x50A8;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x5206;&#x6BB5;&#x5B58;&#x50A8;</h1>
+<h2 id="&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><a name="&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</h2>
+<p><strong>&#x5206;&#x6BB5;</strong> : &#x8FDB;&#x7A0B;&#x7684;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x4F1A;&#x6309;&#x7167;&#x81EA;&#x8EAB;&#x7684;&#x903B;&#x8F91;&#x5173;&#x7CFB;&#x5212;&#x5206;&#x4E3A;&#x82E5;&#x5E72;&#x4E2A;&#x6BB5;, &#x6BCF;&#x4E2A;&#x6BB5;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x6BB5;&#x540D;, &#x6BCF;&#x6BB5;<strong>&#x4ECE;0&#x5F00;&#x59CB;&#x7F16;&#x5740;</strong> </p>
+<p><strong>&#x5185;&#x5B58;&#x5206;&#x914D;&#x89C4;&#x5219;</strong> : &#x4EE5;&#x6BB5;&#x4E3A;&#x5355;&#x4F4D;&#x8FDB;&#x884C;&#x5206;&#x914D;, &#x6BCF;&#x4E2A;&#x6BB5;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5360;&#x636E;&#x8FDE;&#x7EED;&#x7A7A;&#x95F4;, &#x4F46;&#x5404;&#x6BB5;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x4E0D;&#x76F8;&#x90BB;</p>
+<h3 id="&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"><a name="&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x6BB5;&#x7CFB;&#x7EDF;&#x7684;&#x7EC4;&#x6210;:</h3>
+<ol>
+<li>&#x6BB5;&#x53F7;------ &#x6BB5;&#x53F7;&#x7684;&#x4F4D;&#x6570;&#x51B3;&#x5B9A;&#x4E86;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x6BB5;</li>
+<li>&#x6BB5;&#x5185;&#x5730;&#x5740;------&#x6BB5;&#x5185;&#x5730;&#x5740;&#x7684;&#x4F4D;&#x6570;&#x51B3;&#x5B9A;&#x4E86;&#x6BCF;&#x4E2A;&#x6BB5;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;</li>
+</ol>
+<p><img src="http://pic.roccoshi.top/img/1591946528291.png" alt="1591946528291"></p>
+<h3 id="&#x6BB5;&#x8868;"><a name="&#x6BB5;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x6BB5;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BB5;&#x8868;</h3>
+<p>&#x7A0B;&#x5E8F;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x6BB5;, &#x5404;&#x4E2A;&#x6BB5;&#x79BB;&#x6563;&#x5730;&#x88C5;&#x5165;&#x5185;&#x5B58;, &#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;, &#x5C31;&#x5FC5;&#x987B;&#x80FD;&#x4ECE;&#x7269;&#x7406;&#x5185;&#x5B58;&#x4E2D;&#x627E;&#x5230;&#x5404;&#x4E2A;&#x903B;&#x8F91;&#x6BB5;&#x7684;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;. &#x4E3A;&#x6B64;, &#x9700;&#x4E3A;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x5EFA;&#x7ACB;&#x4E00;&#x5F20;&#x6BB5;&#x6620;&#x5C04;&#x8868;, &#x7B80;&#x79F0; &quot; &#x6BB5;&#x8868; &quot; .</p>
+<p><img src="http://pic.roccoshi.top/img/1591946893539.png" alt="1591946893539"></p>
+<p>&#x5173;&#x4E8E;&#x6BB5;&#x8868; : </p>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x6BB5;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x6BB5;&#x8868;&#x9879;, &#x8BB0;&#x5F55;&#x7740;&#x8BE5;&#x6BB5;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E; ( &#x57FA;&#x5740; ) &#x548C; &#x6BB5;&#x957F;</li>
+<li>&#x5404;&#x4E2A;<strong>&#x6BB5;&#x8868;&#x9879;&#x7684;&#x957F;&#x5EA6;&#x662F;&#x76F8;&#x540C;&#x7684;</strong>, &#x56E0;&#x6B64;&#x548C;&#x9875;&#x53F7;&#x4E00;&#x6837;, &#x6BB5;&#x53F7;&#x662F;&quot; &#x9690;&#x542B; &quot;&#x7684;, &#x4E0D;&#x5360;&#x636E;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;</li>
+</ol>
+<h3 id="&#x67E5;&#x627E;&#x8FC7;&#x7A0B;"><a name="&#x67E5;&#x627E;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x627E;&#x8FC7;&#x7A0B;</h3>
+<p><img src="http://pic.roccoshi.top/img/1591947636195.png" alt="1591947636195"></p>
+<h3 id="&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;"><a name="&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x6BB5;&#x548C;&#x5206;&#x9875;&#x7684;&#x5BF9;&#x6BD4;</h3>
+<ul>
+<li><p>&#x9875;&#x662F;&#x4FE1;&#x606F;&#x7684;&#x7269;&#x7406;&#x5355;&#x4F4D;, &#x5206;&#x9875;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x79BB;&#x6563;&#x5206;&#x914D;, &#x63D0;&#x9AD8;&#x5185;&#x5B58;&#x5229;&#x7528;&#x7387;. &#x5206;&#x9875;&#x4EC5;&#x4EC5;&#x662F;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x4E0A;&#x7684;&#x9700;&#x8981;, &#x5B8C;&#x5168;&#x662F;&#x7CFB;&#x7EDF;&#x884C;&#x4E3A;, <strong>&#x5BF9;&#x7528;&#x6237;&#x662F;&#x4E0D;&#x53EF;&#x89C1;</strong>&#x7684;</p>
+</li>
+<li><p>&#x6BB5;&#x662F;&#x4FE1;&#x606F;&#x7684;&#x903B;&#x8F91;&#x5355;&#x4F4D;, &#x5206;&#x6BB5;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x66F4;&#x597D;&#x5730;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x9700;&#x6C42;. &#x4E00;&#x4E2A;&#x6BB5;&#x901A;&#x5E38;&#x5305;&#x542B;&#x7740;&#x4E00;&#x7EC4;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x6A21;&#x5757;&#x7684;&#x4FE1;&#x606F;, &#x5206;&#x6BB5;<strong>&#x5BF9;&#x7528;&#x6237;&#x662F;&#x53EF;&#x89C1;</strong>&#x7684;, &#x7528;&#x6237;&#x7F16;&#x7A0B;&#x65F6;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x5730;&#x7ED9;&#x51FA;&#x6BB5;&#x540D;</p>
+</li>
+<li><p>&#x9875;&#x7684;&#x5927;&#x5C0F;&#x662F;<strong>&#x56FA;&#x5B9A;</strong>&#x4E14;&#x7531;&#x7CFB;&#x7EDF;&#x51B3;&#x5B9A;, &#x6BB5;&#x7684;&#x957F;&#x5EA6;&#x5374;<strong>&#x4E0D;&#x56FA;&#x5B9A;</strong>, &#x51B3;&#x5B9A;&#x4E8E;&#x7528;&#x6237;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;</p>
+</li>
+<li><p>&#x5206;&#x9875;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x662F;&#x4E00;&#x7EF4;&#x7684;, &#x5206;&#x6BB5;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x662F;&#x4E8C;&#x7EF4;&#x7684;.</p>
+</li>
+</ul>
+<p><img src="http://pic.roccoshi.top/img/1591948172050.png" alt="1591948172050"></p>
+<ul>
+<li>&#x5206;&#x6BB5;&#x6BD4;&#x5206;&#x9875;&#x66F4;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;<strong>&#x4FE1;&#x606F;&#x7684;&#x5171;&#x4EAB;&#x548C;&#x4FDD;&#x62A4;</strong></li>
+</ul>
+<h2 id="&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><a name="&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BB5;&#x9875;&#x5F0F;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</h2>
+<h3 id="&#x5206;&#x9875;-&#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;"><a name="&#x5206;&#x9875;-&#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x9875;-&#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x9875;, &#x5206;&#x6BB5;&#x7BA1;&#x7406;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x5206;&#x6790;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">&#x4F18;&#x70B9;</th>
+<th style="text-align:center">&#x7F3A;&#x70B9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x5206;&#x9875;&#x7BA1;&#x7406;</td>
+<td style="text-align:center">&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5229;&#x7528;&#x7387;&#x9AD8;. &#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x5916;&#x90E8;&#x788E;&#x7247;, &#x53EA;&#x6709;&#x5C11;&#x91CF;&#x7684;<strong>&#x5185;&#x90E8;&#x788E;&#x7247;</strong></td>
+<td style="text-align:center">&#x4E0D;&#x65B9;&#x4FBF;&#x903B;&#x8F91;&#x6A21;&#x5757;&#x5B9E;&#x73B0;&#x4FE1;&#x606F;&#x7684;<strong>&#x5171;&#x4EAB;&#x4E0E;&#x4FDD;&#x62A4;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5206;&#x6BB5;&#x7BA1;&#x7406;</td>
+<td style="text-align:center">&#x65B9;&#x4FBF;&#x5B9E;&#x73B0;&#x903B;&#x8F91;&#x6A21;&#x5757;&#x4FE1;&#x606F;&#x7684;&#x5171;&#x4EAB;&#x4E0E;&#x4FDD;&#x62A4;</td>
+<td style="text-align:center">&#x5982;&#x679C;&#x6BB5;&#x957F;&#x8FC7;&#x5927;, &#x4E3A;&#x5176;&#x5206;&#x914D;&#x5F88;&#x5927;&#x7684;&#x8FDE;&#x7EED;&#x7A7A;&#x95F4;&#x4F1A;&#x5F88;&#x4E0D;&#x65B9;&#x4FBF;, &#x5E76;&#x4E14;&#x6BB5;&#x5F0F;&#x7BA1;&#x7406;&#x4F1A;<strong>&#x4EA7;&#x751F;&#x5916;&#x90E8;&#x788E;&#x7247;</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;"><a name="&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x7ED3;&#x6784;</h3>
+<p><strong>&#x5148;&#x5206;&#x6BB5; , &#x518D;&#x5206;&#x9875;</strong></p>
+<p><img src="http://pic.roccoshi.top/img/1591952109892.png" alt="1591952109892"></p>
+<p>&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x903B;&#x8F91;&#x5730;&#x5740;&#x7ED3;&#x6784; : </p>
+<p>&#x7531;<strong>&#x6BB5;&#x53F7;, &#x9875;&#x53F7;, &#x9875;&#x5185;&#x504F;&#x79FB;</strong> &#x7EC4;&#x6210;</p>
+<p><img src="http://pic.roccoshi.top/img/1591952193238.png" alt="1591952193238"></p>
+<ul>
+<li>&#x6BB5;&#x53F7;&#x7684;&#x4F4D;&#x6570;&#x51B3;&#x5B9A;&#x4E86;<strong>&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x6BB5;</strong></li>
+<li>&#x9875;&#x53F7;&#x4F4D;&#x6570;&#x51B3;&#x5B9A;&#x4E86;<strong>&#x6BCF;&#x4E2A;&#x6BB5;&#x6700;&#x5927;&#x6709;&#x591A;&#x5C11;&#x9875;</strong></li>
+<li>&#x9875;&#x5185;&#x504F;&#x79FB;&#x91CF;&#x51B3;&#x5B9A;&#x4E86;<strong>&#x9875;&#x9762;&#x5927;&#x5C0F;&#x548C;&#x5185;&#x5B58;&#x5757;&#x7684;&#x5927;&#x5C0F;</strong></li>
+</ul>
+<p>&#x6CE8;&#x610F; : </p>
+<blockquote>
+<p>&quot;&#x5206;&#x6BB5;&quot;&#x5BF9;&#x7528;&#x6237;&#x662F;&#x53EF;&#x89C1;&#x7684;, &#x800C;&#x5C06;&#x5404;&#x6BB5;&quot;&#x5206;&#x9875;&quot;&#x5BF9;&#x7528;&#x6237;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;, &#x7CFB;&#x7EDF;&#x4F1A;&#x6839;&#x636E;&#x6BB5;&#x5185;&#x5730;&#x5740;&#x81EA;&#x52A8;&#x5212;&#x5206;&#x9875;&#x53F7;&#x548C;&#x6BB5;&#x5185;&#x504F;&#x79FB;&#x91CF;, &#x56E0;&#x6B64;&#x6BB5;&#x9875;&#x5F0F;&#x7BA1;&#x7406;&#x7684;&#x5730;&#x5740;&#x7ED3;&#x6784;&#x662F;&quot;&#x4E8C;&#x7EF4;&quot;&#x7684;.</p>
+</blockquote>
+<h3 id="&#x6BB5;&#x8868;-&#x9875;&#x8868;"><a name="&#x6BB5;&#x8868;-&#x9875;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x6BB5;&#x8868;-&#x9875;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6BB5;&#x8868;, &#x9875;&#x8868;</h3>
+<blockquote>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x6BB5;&#x8868;, &#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x53C8;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x9875;&#x8868;, &#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#x591A;&#x4E2A;&#x9875;&#x8868;.</p>
+</blockquote>
+<p><img src="http://pic.roccoshi.top/img/1591952644348.png" alt="1591952644348"></p>
+<h3 id="&#x67E5;&#x627E;&#x8FC7;&#x7A0B;_1"><a name="&#x67E5;&#x627E;&#x8FC7;&#x7A0B;_1" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;&#x8FC7;&#x7A0B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x627E;&#x8FC7;&#x7A0B;</h3>
+<p><img src="http://pic.roccoshi.top/img/1591952793450.png" alt="1591952793450"></p>
+<ol>
+<li>&#x7531;&#x903B;&#x8F91;&#x5730;&#x5740;&#x5F97;&#x5230;&#x6BB5;&#x53F7;, &#x9875;&#x53F7;, &#x9875;&#x5185;&#x504F;&#x79FB;</li>
+<li>&#x6BB5;&#x53F7;&#x4E0E;&#x6BB5;&#x8868;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x6BB5;&#x957F;&#x5EA6;&#x6BD4;&#x8F83;, &#x68C0;&#x67E5;&#x662F;&#x5426;&#x8D8A;&#x754C;</li>
+<li>&#x7531;&#x6BB5;&#x8868;&#x59CB;&#x5740;, &#x6BB5;&#x53F7;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x6BB5;&#x8868;&#x9879;  ---- <strong>( &#x4E00;&#x6B21;&#x8BBF;&#x5B58;)</strong></li>
+<li>&#x6839;&#x636E;&#x6BB5;&#x8868;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x9875;&#x8868;&#x957F;&#x5EA6;, &#x68C0;&#x67E5;&#x9875;&#x53F7;&#x662F;&#x5426;&#x8D8A;&#x754C;</li>
+<li>&#x7531;&#x6BB5;&#x8868;&#x4E2D;&#x7684;&#x9875;&#x8868;&#x5730;&#x5740;, &#x9875;&#x53F7;&#x5F97;&#x5230;&#x67E5;&#x8BE2;&#x9875;&#x8868;,  &#x627E;&#x5230;&#x76F8;&#x5E94;&#x9875;&#x8868;&#x9879; ---- <strong>( &#x4E8C;&#x6B21;&#x8BBF;&#x5B58;)</strong></li>
+<li>&#x7531;&#x9875;&#x9762;&#x5B58;&#x653E;&#x7684;&#x5185;&#x5B58;&#x5757;&#x53F7;, &#x9875;&#x5185;&#x504F;&#x79FB;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x7269;&#x7406;&#x5730;&#x5740;</li>
+<li>&#x8BBF;&#x95EE;&#x76EE;&#x6807;&#x5355;&#x5143; ---- <strong>( &#x4E09;&#x6B21;&#x8BBF;&#x5B58;)</strong> </li>
+</ol>
+<h2 id="&#x865A;&#x62DF;&#x5185;&#x5B58;"><a name="&#x865A;&#x62DF;&#x5185;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x865A;&#x62DF;&#x5185;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x865A;&#x62DF;&#x5185;&#x5B58;</h2>
+<h3 id="&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;-&#x7F3A;&#x70B9;"><a name="&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;-&#x7F3A;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;-&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x7EDF;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x7279;&#x5F81;, &#x7F3A;&#x70B9;</h3>
+<p><img src="http://pic.roccoshi.top/img/1591953702842.png" alt="1591953702842"></p>
+<ol>
+<li><strong>&#x4E00;&#x6B21;&#x6027;</strong> :  &#x4F5C;&#x4E1A;&#x5FC5;&#x987B;<strong>&#x4E00;&#x6B21;&#x6027;&#x5168;&#x90E8;&#x88C5;&#x5165;&#x5185;&#x5B58;</strong>&#x624D;&#x80FD;&#x5F00;&#x59CB;&#x8FD0;&#x884C;<ul>
+<li>&#x4F5C;&#x4E1A;&#x5F88;&#x5927;&#x65F6;, &#x65E0;&#x6CD5;&#x88C5;&#x5165;&#x5BFC;&#x81F4;&#x5927;&#x4F5C;&#x4E1A;&#x65E0;&#x6CD5;&#x8FD0;&#x884C;</li>
+<li>&#x5927;&#x91CF;&#x4F5C;&#x4E1A;&#x8981;&#x6C42;&#x8FD0;&#x884C;&#x65F6;&#x5185;&#x5B58;&#x65E0;&#x6CD5;&#x5BB9;&#x7EB3;&#x6240;&#x6709;&#x4F5C;&#x4E1A;, &#x5BFC;&#x81F4;&#x591A;&#x9053;&#x7A0B;&#x5E8F;&#x5E76;&#x53D1;&#x5EA6;&#x4E0B;&#x964D;</li>
+</ul>
+</li>
+<li><strong>&#x9A7B;&#x7559;&#x6027;</strong> : &#x4E00;&#x65E6;&#x4F5C;&#x4E1A;&#x88AB;&#x88C5;&#x5165;&#x5185;&#x5B58;, &#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x9A7B;&#x7559;&#x5728;&#x5185;&#x5B58;&#x4E2D;, &#x76F4;&#x5230;&#x4F5C;&#x4E1A;&#x8FD0;&#x884C;&#x7ED3;&#x675F;, &#x8FD9;&#x6837;&#x4F1A;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x4E2D;&#x9A7B;&#x7559;&#x5927;&#x91CF;&#x7684;, &#x6682;&#x65F6;&#x7528;&#x4E0D;&#x5230;&#x7684;&#x6570;&#x636E;, &#x6D6A;&#x8D39;&#x5185;&#x5B58;&#x8D44;&#x6E90;</li>
+</ol>
+<p><strong>&#x865A;&#x62DF;&#x5185;&#x5B58;---&#x57FA;&#x4E8E;&#x5C40;&#x90E8;&#x6027;&#x539F;&#x7406;</strong></p>
+<ol>
+<li><p>&#x5728;&#x7A0B;&#x5E8F;&#x88C5;&#x5165;&#x65F6;, &#x5C06;&#x7A0B;&#x5E8F;&#x4E2D;&#x5F88;&#x5FEB;&#x4F1A;&#x7528;&#x5230;&#x7684;&#x90E8;&#x5206;&#x88C5;&#x5165;&#x5185;&#x5B58;, &#x6682;&#x65F6;&#x7528;&#x4E0D;&#x5230;&#x7684;&#x90E8;&#x5206;&#x7559;&#x5728;&#x5916;&#x5B58;, &#x5C31;&#x53EF;&#x4EE5;&#x8BA9;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x6267;&#x884C;. </p>
+</li>
+<li><p>&#x5728;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;, &#x5F53;&#x6240;&#x8BBF;&#x95EE;&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x5728;&#x5185;&#x5B58;&#x65F6;, &#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D1F;&#x8D23;&#x5C06;&#x6240;&#x9700;&#x4FE1;&#x606F;&#x7531;&#x5916;&#x5B58;&#x8C03;&#x5165;&#x5185;&#x5B58;, &#x7136;&#x540E;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x7A0B;&#x5E8F;.</p>
+</li>
+<li><p>&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x4E0D;&#x591F;&#x65F6;, &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D1F;&#x8D23;&#x5C06;&#x5185;&#x5B58;&#x4E2D;&#x6682;&#x65F6;&#x7528;&#x4E0D;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x6362;&#x51FA;&#x5230;&#x5916;&#x5B58;</p>
+</li>
+<li>&#x5728;&#x7528;&#x6237;&#x770B;&#x6765;, &#x5C31;&#x6709;&#x4E00;&#x4E2A;&#x6BD4;&#x5B9E;&#x9645;&#x5185;&#x5B58;&#x5927;&#x5F88;&#x591A;&#x7684;&#x5185;&#x5B58;, &#x8FD9;&#x5C31;&#x53EB;&#x865A;&#x62DF;&#x5185;&#x5B58;</li>
+</ol>
+<p><strong>&#x6CE8;&#x610F;</strong> : </p>
+<p>&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7684;&#x6700;&#x5927;&#x5BB9;&#x91CF;&#x662F;&#x7531;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x5730;&#x5740;&#x7ED3;&#x6784; ( CPU&#x7684;&#x5BFB;&#x5740;&#x8303;&#x56F4; ) &#x786E;&#x5B9A;&#x7684;, &#x865A;&#x62DF;&#x5185;&#x5B58;&#x7684;&#x5B9E;&#x9645;&#x5BB9;&#x91CF; = $ min( &#x5185;&#x5B58;&#x5BB9;&#x91CF; + &#x5916;&#x5B58;&#x5BB9;&#x91CF;, CPU&#x5BFB;&#x5740;&#x8303;&#x56F4;) $ </p>
+<p><img src="http://pic.roccoshi.top/img/1591955520437.png" alt="1591955520437"></p>
+<p><strong>&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7684;&#x5B9E;&#x73B0;</strong> : </p>
+<ul>
+<li>&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x5B58;&#x50A8;&#x7BA1;&#x7406;</li>
+<li><p>&#x8BF7;&#x6C42;&#x5206;&#x6BB5;&#x5B58;&#x50A8;&#x7BA1;&#x7406;</p>
+</li>
+<li><p>&#x8BF7;&#x6C42;&#x6BB5;&#x9875;&#x5F0F;&#x5B58;&#x50A8;&#x7BA1;&#x7406;</p>
+</li>
+</ul>
+<p><strong>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;</strong> : </p>
+<ol>
+<li>&#x8BF7;&#x6C42;&#x8C03;&#x9875; ( &#x6BB5; ) </li>
+<li>&#x9875;&#x9762;&#x7F6E;&#x6362; ( &#x6BB5;&#x7F6E;&#x6362; )</li>
+</ol>
+<p>&#x7F3A;&#x9875;&#x65F6;&#x8BF7;&#x6C42;&#x6389;&#x9875;&#x4E0D;&#x4E00;&#x5B9A;&#x9875;&#x9762;&#x7F6E;&#x6362;, &#x82E5;&#x8FD8;&#x6709;&#x53EF;&#x7528;&#x7684;&#x5185;&#x5B58;&#x5757;, &#x5C31;&#x4E0D;&#x7528;&#x8FDB;&#x884C;&#x9875;&#x9762;&#x7F6E;&#x6362;</p>
+<h2 id="&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><a name="&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</h2>
+<h3 id="&#x9875;&#x8868;&#x673A;&#x5236;"><a name="&#x9875;&#x8868;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x8868;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x8868;&#x673A;&#x5236;</h3>
+<p><img src="http://pic.roccoshi.top/img/1591957624630.png" alt="1591957624630"></p>
+<h3 id="&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;"><a name="&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x673A;&#x6784;</h3>
+<p>&#x5728;&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;, &#x6BCF;&#x5F53;&#x8981;&#x8BBF;&#x95EE;&#x7684;&#x9875;&#x9762;&#x4E0D;&#x5728;&#x5185;&#x5B58;&#x65F6;, &#x4FBF;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x7F3A;&#x9875;&#x4E2D;&#x65AD;, &#x7136;&#x540E;&#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5904;&#x7406;&#x4E2D;&#x65AD;</p>
+<p>&#x6B64;&#x65F6;&#x7F3A;&#x9875;&#x7684;&#x8FDB;&#x7A0B;&#x963B;&#x585E;, &#x653E;&#x5165;&#x963B;&#x585E;&#x961F;&#x5217;, &#x8C03;&#x9875;&#x5B8C;&#x6210;&#x540E;&#x518D;&#x5C06;&#x5176;&#x5524;&#x9192;, &#x653E;&#x56DE;&#x5C31;&#x7EEA;&#x961F;&#x5217;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x5185;&#x5B58;&#x4E2D;<strong>&#x6709;&#x7A7A;&#x95F2;&#x5757;</strong>, &#x5219;&#x4E3A;&#x8FDB;&#x7A0B;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7A7A;&#x95F2;&#x5757;, &#x5C06;&#x6240;&#x7F3A;&#x9875;&#x9762;&#x88C5;&#x5165;&#x8BE5;&#x5757;, &#x5E76;&#x4FEE;&#x6539;&#x9875;&#x8868;&#x4E2D;&#x76F8;&#x5E94;&#x7684;&#x9875;&#x8868;&#x9879;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5185;&#x5B58;&#x4E2D;<strong>&#x6CA1;&#x6709;&#x7A7A;&#x95F2;&#x5757;</strong>, &#x5219;&#x7531;&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x6DD8;&#x6C70;, &#x82E5;&#x8BE5;&#x9875;&#x9762;&#x5728;&#x5185;&#x5B58;&#x671F;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#x8FC7;, &#x5219;&#x8981;&#x5C06;&#x5176;<strong>&#x5199;&#x56DE;&#x5916;&#x5B58;</strong>, &#x672A;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x9875;&#x9762;&#x4E0D;&#x7528;&#x5199;&#x56DE;&#x5916;&#x5B58;</p>
+</li>
+</ul>
+<p><strong>&#x7F3A;&#x9875;&#x4E2D;&#x65AD;</strong>&#x662F;&#x56E0;&#x4E3A;&#x5F53;&#x524D;&#x6267;&#x884C;&#x7684;&#x6307;&#x4EE4;&#x60F3;&#x8981;&#x8BBF;&#x95EE;&#x76EE;&#x6807;&#x9875;&#x9762;&#x672A;&#x8C03;&#x5165;&#x5185;&#x5B58;&#x800C;&#x4EA7;&#x751F;&#x7684;, &#x56E0;&#x6B64;&#x5C5E;&#x4E8E;<strong>&#x5185;&#x4E2D;&#x65AD;</strong> : </p>
+<p><img src="http://pic.roccoshi.top/img/1591958161528.png" alt="1591958161528"></p>
+<h3 id="&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;"><a name="&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x9762;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;</h3>
+<h4 id="&#x6700;&#x4F73;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;opt"><a name="&#x6700;&#x4F73;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;opt" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x4F73;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;opt"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x4F73;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;OPT</h4>
+<p>&#x6BCF;&#x6B21;&#x9009;&#x62E9;&#x6DD8;&#x6C70;&#x7684;&#x9875;&#x9762;&#x662F;&#x4EE5;&#x540E;&#x6C38;&#x4E0D;&#x4F7F;&#x7528;&#x6216;&#x8005;&#x5728;&#x6700;&#x957F;&#x65F6;&#x95F4;&#x5185;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x7684;&#x9875;&#x9762;, &#x4FDD;&#x8BC1;<strong>&#x6700;&#x4F4E;&#x7684;&#x7F3A;&#x9875;&#x7387;</strong> . &#x4F46;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x9884;&#x5224;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x5E8F;&#x5217;, &#x8FD9;&#x79CD;&#x7B97;&#x6CD5;&#x662F;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;</p>
+<h4 id="&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;-fifo"><a name="&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;-fifo" class="anchor-navigation-ex-anchor" href="#&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;-fifo"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7F6E;&#x6362;&#x7B97;&#x6CD5; FIFO</h4>
+<p> &#x6BCF;&#x6B21;&#x6DD8;&#x6C70;&#x7684;&#x9875;&#x9762;&#x662F;<strong>&#x6700;&#x65E9;&#x8FDB;&#x5165;&#x5185;&#x5B58;&#x7684;&#x9875;&#x9762;</strong></p>
+<p>&#x5B9E;&#x73B0; : &#x5C06;&#x8C03;&#x5165;&#x5185;&#x5B58;&#x7684;&#x9875;&#x9762;&#x6839;&#x636E;&#x8C03;&#x5165;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x6210;&#x4E00;&#x4E2A;&#x961F;&#x5217;, &#x9700;&#x8981;&#x7F6E;&#x6362;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#x9009;&#x62E9;&#x961F;&#x9996;&#x7684;&#x9875;&#x9762;.</p>
+<p> &#x5B9E;&#x73B0;&#x7B80;&#x5355;, &#x7B97;&#x6CD5;&#x6027;&#x80FD;&#x5DEE;, &#x4E0D;&#x9002;&#x5E94;&#x8FDB;&#x7A0B;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x89C4;&#x5F8B;</p>
+<h4 id="&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;-lru"><a name="&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;-lru" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7B97;&#x6CD5;-lru"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7B97;&#x6CD5; LRU</h4>
+<p><img src="http://pic.roccoshi.top/img/1591960033039.png" alt="1591960033039"></p>
+<p>&#x5F53;&#x9700;&#x8981;&#x6DD8;&#x6C70;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;, &#x9009;&#x62E9;&#x73B0;&#x6709;&#x9875;&#x9762;&#x4E2D;t&#x503C;&#x6700;&#x5927;&#x7684;, &#x5373;&#x6700;&#x8FD1;&#x6700;&#x4E45;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x9875;&#x9762;.</p>
+<p>&#x505A;&#x9898;&#x65F6;&#x7684;&#x65B9;&#x6CD5; : &#x9700;&#x8981;&#x6DD8;&#x6C70;&#x9875;&#x9762;&#x65F6;, &#x9006;&#x5411;&#x68C0;&#x67E5;&#x6B64;&#x65F6;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x9875;&#x9762;&#x53F7;, &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x7684;&#x9875;&#x53F7;&#x5C31;&#x662F;&#x9700;&#x8981;&#x88AB;&#x6DD8;&#x6C70;&#x7684;</p>
+<p>LRU&#x7B97;&#x6CD5;&#x7684;&#x7279;&#x70B9; : <strong>&#x6027;&#x80FD;&#x597D;</strong>, &#x4F46;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x9700;&#x8981;&#x4E13;&#x95E8;&#x7684;&#x786C;&#x4EF6;&#x652F;&#x6301;, &#x7B97;&#x6CD5;<strong>&#x5F00;&#x9500;&#x5927;</strong></p>
+<h4 id="&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;--clock---&#x6700;&#x8FD1;&#x672A;&#x7528;&#x7B97;&#x6CD5;--nru-"><a name="&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;--clock---&#x6700;&#x8FD1;&#x672A;&#x7528;&#x7B97;&#x6CD5;--nru-" class="anchor-navigation-ex-anchor" href="#&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;--clock---&#x6700;&#x8FD1;&#x672A;&#x7528;&#x7B97;&#x6CD5;--nru-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5; ( CLOCK ) / &#x6700;&#x8FD1;&#x672A;&#x7528;&#x7B97;&#x6CD5; ( NRU )</h4>
+<p>&#x4ED6;&#x4EEC;&#x662F;&#x540C;&#x4E00;&#x79CD;&#x7B97;&#x6CD5;.</p>
+<p>&#x7B80;&#x5355;&#x7684;CLOCK&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5; : </p>
+<p><img src="http://pic.roccoshi.top/img/1591960787831.png" alt="1591960787831"></p>
+<p>&#x7B80;&#x5355;&#x7684;&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;&#x4EC5;&#x8003;&#x8651;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x6700;&#x8FD1;&#x662F;&#x5426;&#x88AB;&#x8BBF;&#x95EE;&#x8FC7;, &#x4F46;&#x662F;&#x4E8B;&#x5B9E;&#x4E0A;, &#x5982;&#x679C;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x9875;&#x9762;&#x6CA1;&#x6709;&#x88AB;&#x4FEE;&#x6539;&#x8FC7;, &#x5C31;&#x4E0D;&#x9700;&#x8981;&#x6267;&#x884C;I/O&#x64CD;&#x4F5C;&#x5199;&#x56DE;&#x5916;&#x5B58;. &#x53EA;&#x6709;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x9875;&#x9762;<strong>&#x88AB;&#x4FEE;&#x6539;&#x8FC7;&#x65F6;</strong>, &#x624D;&#x9700;&#x8981;&#x5199;&#x56DE;&#x5916;&#x5B58;------&#x56E0;&#x6B64;, &#x9664;&#x4E86;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x6700;&#x8FD1;&#x6709;&#x6CA1;&#x6709;&#x88AB;&#x8BBF;&#x95EE;&#x8FC7;&#x4E4B;&#x5916;, &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FD8;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x9875;&#x9762;&#x6709;&#x6CA1;&#x6709;&#x88AB;&#x4FEE;&#x6539;&#x8FC7;. &#x5728;&#x5176;&#x4ED6;&#x6761;&#x4EF6;&#x90FD;&#x76F8;&#x540C;&#x65F6;, &#x5E94;&#x8BE5;<strong>&#x4F18;&#x5148;&#x6DD8;&#x6C70;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x9875;&#x9762;, &#x907F;&#x514D;I/O&#x64CD;&#x4F5C;</strong>, &#x8FD9;&#x5C31;&#x662F;<strong>&#x6539;&#x8FDB;&#x578B;&#x7684;&#x65F6;&#x949F;&#x7F6E;&#x6362;&#x7B97;&#x6CD5;</strong>&#x7684;&#x601D;&#x60F3;.</p>
+<p>&#x5229;&#x7528; <strong>(&#x8BBF;&#x95EE;&#x4F4D;R, &#x4FEE;&#x6539;&#x4F4D;M)</strong> &#x7684;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#x5404;&#x9875;&#x9762;&#x72B6;&#x6001;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">&#x5BF9;&#x5E94;&#x9875;&#x9762;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7B2C;&#x4E00;&#x8F6E; : &#x627E;&#x7B2C;&#x4E00;&#x4E2A; (0, 0)&#x7684;&#x5E27;&#x7528;&#x4E8E;&#x66FF;&#x6362;  ( &#x4E0D;&#x4FEE;&#x6539;&#x6807;&#x5FD7;&#x4F4D; )</td>
+<td style="text-align:center">&#x6700;&#x8FD1;&#x6CA1;&#x8BBF;&#x95EE;&#x4E14;&#x6CA1;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>&#x7B2C;&#x4E8C;&#x8F6E; : &#x627E;&#x7B2C;&#x4E00;&#x4E2A; (0, 1)&#x7684;&#x5E27;&#x7528;&#x4E8E;&#x66FF;&#x6362; ( &#x5C06;&#x6240;&#x6709;&#x626B;&#x63CF;&#x8FC7;&#x7684;&#x5E27;&#x8BBF;&#x95EE;&#x4F4D;&#x8BBE;&#x4E3A;0)</td>
+<td style="text-align:center">&#x6700;&#x8FD1;&#x6CA1;&#x8BBF;&#x95EE;&#x4F46;&#x4FEE;&#x6539;&#x8FC7;</td>
+</tr>
+<tr>
+<td>&#x7B2C;&#x4E09;&#x8F6E; : &#x627E;&#x7B2C;&#x4E00;&#x4E2A; (1, 0)&#x7684;&#x5E27;&#x7528;&#x4E8E;&#x66FF;&#x6362; ( &#x4E0D;&#x4FEE;&#x6539;&#x6807;&#x5FD7;&#x4F4D; )</td>
+<td style="text-align:center">&#x6700;&#x8FD1;&#x8BBF;&#x95EE;&#x8FC7;&#x4F46;&#x6CA1;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>&#x7B2C;&#x56DB;&#x8F6E; : &#x627E;&#x7B2C;&#x4E00;&#x4E2A; (1, 1)&#x7684;&#x5E27;&#x7528;&#x4E8E;&#x66FF;&#x6362;</td>
+<td style="text-align:center">&#x6700;&#x8FD1;&#x8BBF;&#x95EE;&#x8FC7;&#x4E5F;&#x4FEE;&#x6539;&#x8FC7;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x7279;&#x70B9; : &#x5F00;&#x9500;&#x5C0F;, &#x6027;&#x80FD;&#x4E5F;&#x4E0D;&#x9519;</strong></p>
+<h3 id="&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;"><a name="&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9875;&#x9762;&#x5206;&#x914D;&#x7B56;&#x7565;</h3>
+<p><img src="http://pic.roccoshi.top/img/1591961767613.png" alt="1591961767613"></p>
+<h4 id="&#x9A7B;&#x7559;&#x96C6;"><a name="&#x9A7B;&#x7559;&#x96C6;" class="anchor-navigation-ex-anchor" href="#&#x9A7B;&#x7559;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9A7B;&#x7559;&#x96C6;</h4>
+<p>&#x8BF7;&#x6C42;&#x5206;&#x9875;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x5668;&#x4E2D;<strong>&#x7ED9;&#x8FDB;&#x7A0B;&#x5206;&#x914D;&#x7684;&#x7269;&#x7406;&#x5757;&#x7684;&#x96C6;&#x5408;.</strong> ( &#x7CFB;&#x7EDF;&#x7ED9;&#x8FDB;&#x7A0B;&#x5206;&#x914D;&#x4E86;n&#x5404;&#x7269;&#x7406;&#x5757; ----&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x8868;&#x8FF0; : &#x9A7B;&#x7559;&#x96C6;&#x5927;&#x5C0F;&#x4E3A;n)</p>
+<p>&#x5728;&#x91C7;&#x7528;&#x865A;&#x62DF;&#x5B58;&#x50A8;&#x6280;&#x672F;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;, &#x9A7B;&#x7559;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x4E00;&#x822C;<strong>&#x5C0F;&#x4E8E;</strong>&#x8FDB;&#x7A0B;&#x7684;&#x603B;&#x5927;&#x5C0F;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x9A7B;&#x7559;&#x96C6;&#x592A;&#x5C0F;, &#x4F1A;&#x5BFC;&#x81F4;&#x7F3A;&#x9875;&#x9891;&#x7E41;, &#x7CFB;&#x7EDF;&#x8981;&#x82B1;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x6765;&#x5904;&#x7406;&#x7F3A;&#x9875;, &#x5B9E;&#x9645;&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x63A8;&#x8FDB;&#x7684;&#x65F6;&#x95F4;&#x5F88;&#x5C11;</li>
+<li>&#x5982;&#x679C;&#x9A7B;&#x7559;&#x96C6;&#x592A;&#x5927;, &#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x9053;&#x7A0B;&#x5E8F;&#x5E76;&#x53D1;&#x5EA6;&#x4E0B;&#x964D;, &#x8D44;&#x6E90;&#x5229;&#x7528;&#x7387;&#x964D;&#x4F4E;  </li>
+</ul>
+<h4 id="&#x51E0;&#x79CD;&#x5206;&#x914D;&#x7B56;&#x7565;"><a name="&#x51E0;&#x79CD;&#x5206;&#x914D;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x51E0;&#x79CD;&#x5206;&#x914D;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51E0;&#x79CD;&#x5206;&#x914D;&#x7B56;&#x7565;</h4>
+<p><img src="http://pic.roccoshi.top/img/1591962193724.png" alt="1591962193724"></p>
+<p>&#x56FA;&#x5B9A;&#x5206;&#x914D;&#x5168;&#x5C40;&#x7F6E;&#x6362;&#x4E0D;&#x5B58;&#x5728;, &#x56E0;&#x4E3A;&#x8FDB;&#x7A0B;&#x7269;&#x7406;&#x5757;&#x56FA;&#x5B9A;&#x540E;&#x4E0D;&#x4F1A;&#x518D;&#x5206;&#x914D;&#x7ED9;&#x522B;&#x4EBA;</p>
+<p><img src="http://pic.roccoshi.top/img/1591962412772.png" alt="1591962412772"></p>
+<ul>
+<li>&#x53EF;&#x53D8;&#x5206;&#x914D;&#x5168;&#x5C40;&#x7F6E;&#x6362; : &#x53EA;&#x8981;&#x7F3A;&#x9875;&#x5C31;&#x7ED9;&#x5206;&#x914D;&#x65B0;&#x7269;&#x7406;&#x5757;</li>
+<li>&#x53EF;&#x53D8;&#x5206;&#x914D;&#x5C40;&#x90E8;&#x7F6E;&#x6362; : &#x6839;&#x636E;&#x53D1;&#x751F;&#x7F3A;&#x9875;&#x7684;&#x9891;&#x7387;&#x6765;&#x52A8;&#x6001;&#x5730;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x8FDB;&#x7A0B;&#x7684;&#x7269;&#x7406;&#x5757;</li>
+</ul>
+<h4 id="&#x4F55;&#x65F6;&#x8C03;&#x5165;&#x9875;&#x9762;"><a name="&#x4F55;&#x65F6;&#x8C03;&#x5165;&#x9875;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x4F55;&#x65F6;&#x8C03;&#x5165;&#x9875;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F55;&#x65F6;&#x8C03;&#x5165;&#x9875;&#x9762;</h4>
+<ul>
+<li><p>&#x9884;&#x8C03;&#x9875;&#x7B56;&#x7565;<img src="http://pic.roccoshi.top/img/%5CUsers%5C47461%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1591962612853.png" alt="1591962612853"></p>
+</li>
+<li><p>&#x8BF7;&#x6C42;&#x8C03;&#x9875;&#x7B56;&#x7565;</p>
+</li>
+</ul>
+<p><img src="http://pic.roccoshi.top/img/1591962637166.png" alt="1591962637166"></p>
+<h4 id="&#x4F55;&#x5904;&#x8C03;&#x5165;&#x9875;&#x9762;"><a name="&#x4F55;&#x5904;&#x8C03;&#x5165;&#x9875;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x4F55;&#x5904;&#x8C03;&#x5165;&#x9875;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F55;&#x5904;&#x8C03;&#x5165;&#x9875;&#x9762;</h4>
+<p><img src="http://pic.roccoshi.top/img/1591962758880.png" alt="1591962758880"></p>
+<p>&#x6587;&#x4EF6;&#x533A;&#x7528;&#x4E8E;&#x8C03;&#x5165;&#x4E0D;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x6570;&#x636E;, &#x5BF9;&#x6362;&#x533A;&#x7528;&#x7528;&#x4E8E;&#x8C03;&#x5165;&#x53EF;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x6570;&#x636E;</p>
+<p><strong>&#x6296;&#x52A8;&#x73B0;&#x8C61;</strong></p>
+<p><img src="http://pic.roccoshi.top/img/1591962950965.png" alt="1591962950965"></p>
+<h4 id="&#x5DE5;&#x4F5C;&#x96C6;"><a name="&#x5DE5;&#x4F5C;&#x96C6;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x4F5C;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DE5;&#x4F5C;&#x96C6;</h4>
+<p><img src="http://pic.roccoshi.top/img/1591963213119.png" alt="1591963213119"></p>
+<ul>
+<li>&#x4E00;&#x822C;&#x6765;&#x8BF4; &#x9A7B;&#x7559;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x4E0D;&#x80FD;&#x5C0F;&#x4E8E;&#x5DE5;&#x4F5C;&#x96C6;&#x7684;&#x5927;&#x5C0F;, &#x5426;&#x5219;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x5C06;&#x9891;&#x7E41;&#x7F3A;&#x9875;. </li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
+2020-08-12 07:13:41
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3. 分页存储.html" class="navigation navigation-prev " aria-label="Previous page: 3. 分页存储">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5. 内存管理.html" class="navigation navigation-next " aria-label="Next page: 5. 内存管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. 分段存储","level":"1.2.4","depth":2,"next":{"title":"5. 内存管理","level":"1.2.5","depth":2,"path":"roccoshi_note/00-操作系统笔记/5. 内存管理.md","ref":"roccoshi_note/00-操作系统笔记/5. 内存管理.md","articles":[]},"previous":{"title":"3. 分页存储","level":"1.2.3","depth":2,"path":"roccoshi_note/00-操作系统笔记/3. 分页存储.md","ref":"roccoshi_note/00-操作系统笔记/3. 分页存储.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","summary","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"summary":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/00-操作系统笔记/4. 分段存储.md","mtime":"2020-08-12T07:13:41.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-12T07:14:06.703Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
