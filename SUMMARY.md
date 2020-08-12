@@ -69,6 +69,7 @@
       * [5.3 FTP](roccoshi_note/01-计算机网络笔记/5. 应用层/5.3 FTP.md)
       * [5.4 电子邮件](roccoshi_note/01-计算机网络笔记/5. 应用层/5.4 电子邮件.md)
       * [5.5 HTTP](roccoshi_note/01-计算机网络笔记/5. 应用层/5.5 HTTP.md)
+    * [6-考纲](roccoshi_note/01-计算机网络笔记/6-考纲.md)
   - [02-计算机组成原理](roccoshi_note/02-计算机组成原理/README.md)
     - [2. 数据表示--编码](roccoshi_note/02-计算机组成原理/2. 数据表示--编码/README.md)
       * [2.1 原码 补码 反码](roccoshi_note/02-计算机组成原理/2. 数据表示--编码/2.1 原码 补码 反码.md)
