@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>7.1 流水线时空图和吞吐率 · roccoshi-note</title>
+        <title>4.2 Cache全相联组相联 · roccoshi-note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="7.2 加速比和效率.html" />
+    <link rel="next" href="4.3 Cache替换算法 性能计算.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="4.1 存储系统概述.html" />
     
 
     </head>
@@ -1280,9 +1280,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.3" data-path="../4. 存储系统/">
+        <li class="chapter " data-level="1.2.3.3" data-path="./">
             
-                <a href="../4. 存储系统/">
+                <a href="./">
             
                     
                     4. 存储系统
@@ -1294,9 +1294,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.3.3.1" data-path="../4. 存储系统/4.1 存储系统概述.html">
+        <li class="chapter " data-level="1.2.3.3.1" data-path="4.1 存储系统概述.html">
             
-                <a href="../4. 存储系统/4.1 存储系统概述.html">
+                <a href="4.1 存储系统概述.html">
             
                     
                     4.1 存储系统概述
@@ -1307,9 +1307,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.3.2" data-path="../4. 存储系统/4.2 Cache全相联组相联.html">
+        <li class="chapter active" data-level="1.2.3.3.2" data-path="4.2 Cache全相联组相联.html">
             
-                <a href="../4. 存储系统/4.2 Cache全相联组相联.html">
+                <a href="4.2 Cache全相联组相联.html">
             
                     
                     4.2 Cache全相联组相联
@@ -1320,9 +1320,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.3.3" data-path="../4. 存储系统/4.3 Cache替换算法 性能计算.html">
+        <li class="chapter " data-level="1.2.3.3.3" data-path="4.3 Cache替换算法 性能计算.html">
             
-                <a href="../4. 存储系统/4.3 Cache替换算法 性能计算.html">
+                <a href="4.3 Cache替换算法 性能计算.html">
             
                     
                     4.3 Cache替换算法 性能计算
@@ -1333,9 +1333,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.3.4" data-path="../4. 存储系统/4.4 虚拟存储器.html">
+        <li class="chapter " data-level="1.2.3.3.4" data-path="4.4 虚拟存储器.html">
             
-                <a href="../4. 存储系统/4.4 虚拟存储器.html">
+                <a href="4.4 虚拟存储器.html">
             
                     
                     4.4 虚拟存储器
@@ -1346,9 +1346,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.3.5" data-path="../4. 存储系统/4.5 磁盘.html">
+        <li class="chapter " data-level="1.2.3.3.5" data-path="4.5 磁盘.html">
             
-                <a href="../4. 存储系统/4.5 磁盘.html">
+                <a href="4.5 磁盘.html">
             
                     
                     4.5 磁盘
@@ -1493,9 +1493,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.6" data-path="./">
+        <li class="chapter " data-level="1.2.3.6" data-path="../7. 流水线/">
             
-                <a href="./">
+                <a href="../7. 流水线/">
             
                     
                     7. 流水线
@@ -1507,9 +1507,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.3.6.1" data-path="7.1 流水线时空图和吞吐率.html">
+        <li class="chapter " data-level="1.2.3.6.1" data-path="../7. 流水线/7.1 流水线时空图和吞吐率.html">
             
-                <a href="7.1 流水线时空图和吞吐率.html">
+                <a href="../7. 流水线/7.1 流水线时空图和吞吐率.html">
             
                     
                     7.1 流水线时空图和吞吐率
@@ -1520,9 +1520,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.6.2" data-path="7.2 加速比和效率.html">
+        <li class="chapter " data-level="1.2.3.6.2" data-path="../7. 流水线/7.2 加速比和效率.html">
             
-                <a href="7.2 加速比和效率.html">
+                <a href="../7. 流水线/7.2 加速比和效率.html">
             
                     
                     7.2 加速比和效率
@@ -1850,7 +1850,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >7.1 流水线时空图和吞吐率</a>
+        <a href="../../.." >4.2 Cache全相联组相联</a>
     </h1>
 </div>
 
@@ -1865,34 +1865,89 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#71-&#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;"><b></b>7.1 &#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;</a></li><ul><li><span class="title-icon "></span><a href="#&#x541E;&#x5410;&#x7387;"><b></b>&#x541E;&#x5410;&#x7387;</a></li></ul></ul></div><a href="#71-&#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="71-&#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;"><a name="71-&#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;" class="anchor-navigation-ex-anchor" href="#71-&#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;"><i class="fa fa-link" aria-hidden="true"></i></a>7.1 &#x6D41;&#x6C34;&#x7EBF;&#x65F6;&#x7A7A;&#x56FE;&#x548C;&#x541E;&#x5410;&#x7387;</h1>
-<center><img src="https://youpai.roccoshi.top/img/20200719154020.png" style="width:70%"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;"></div> </center>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#42-cache-&#x5168;&#x76F8;&#x8054;-&#x7EC4;&#x76F8;&#x8054;-&#x91CD;&#x70B9;&#x5FC5;&#x8003;"><b></b>4.2 Cache &#x5168;&#x76F8;&#x8054; &#x7EC4;&#x76F8;&#x8054; (&#x91CD;&#x70B9;&#x5FC5;&#x8003;)</a></li><ul><li><span class="title-icon "></span><a href="#1-cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><b></b>1. Cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#2-cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;"><b></b>2. Cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;</a></li><ul><li><span class="title-icon "></span><a href="#21-&#x5168;&#x76F8;&#x8054;"><b></b>2.1 &#x5168;&#x76F8;&#x8054;</a></li><li><span class="title-icon "></span><a href="#22-&#x76F4;&#x63A5;&#x6620;&#x5C04;"><b></b>2.2 &#x76F4;&#x63A5;&#x6620;&#x5C04;</a></li></ul><li><span class="title-icon "></span><a href="#23-&#x7EC4;&#x76F8;&#x8054;"><b></b>2.3 &#x7EC4;&#x76F8;&#x8054;</a></li><li><span class="title-icon "></span><a href="#3-&#x4F8B;&#x9898;"><b></b>3. &#x4F8B;&#x9898;</a></li></ul></ul></div><a href="#42-cache-&#x5168;&#x76F8;&#x8054;-&#x7EC4;&#x76F8;&#x8054;-&#x91CD;&#x70B9;&#x5FC5;&#x8003;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="42-cache-&#x5168;&#x76F8;&#x8054;-&#x7EC4;&#x76F8;&#x8054;-&#x91CD;&#x70B9;&#x5FC5;&#x8003;"><a name="42-cache-&#x5168;&#x76F8;&#x8054;-&#x7EC4;&#x76F8;&#x8054;-&#x91CD;&#x70B9;&#x5FC5;&#x8003;" class="anchor-navigation-ex-anchor" href="#42-cache-&#x5168;&#x76F8;&#x8054;-&#x7EC4;&#x76F8;&#x8054;-&#x91CD;&#x70B9;&#x5FC5;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 Cache &#x5168;&#x76F8;&#x8054; &#x7EC4;&#x76F8;&#x8054; (&#x91CD;&#x70B9;&#x5FC5;&#x8003;)</h1>
+<h2 id="1-cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><a name="1-cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#1-cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Cache&#x7684;&#x4F5C;&#x7528;&#x548C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h2>
+<p> <strong>&#x5C40;&#x90E8;&#x6027;&#x539F;&#x7406;</strong> : </p>
+<ul>
+<li><p>&#x65F6;&#x95F4;&#x7684;&#x5C40;&#x90E8;&#x6027; : &#x5185;&#x5B58;&#x67D0;&#x4E2A;&#x5355;&#x5143;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x53CD;&#x590D;&#x4F7F;&#x7528; ( &#x5FAA;&#x73AF;&#x53D8;&#x91CF; )</p>
+</li>
+<li><p>&#x7A7A;&#x95F4;&#x7684;&#x5C40;&#x90E8;&#x6027; : &#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7C7B;&#x7684;&#x7A7A;&#x95F4;&#x8FD9;&#x6B21;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x5143;&#x7D20;, &#x4E0B;&#x4E00;&#x6B21;&#x53EF;&#x80FD;&#x4F1A;&#x8BBF;&#x95EE;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20; ( &#x904D;&#x5386;&#x6570;&#x7EC4; )</p>
+</li>
+</ul>
+<p><strong>Cache</strong> : </p>
+<center><img src="https://youpai.roccoshi.top/img/20200718103731.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">Cache</div> </center>
 
-<center><img src="https://youpai.roccoshi.top/img/20200719154042.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;"></div> </center>
-
-<h2 id="&#x541E;&#x5410;&#x7387;"><a name="&#x541E;&#x5410;&#x7387;" class="anchor-navigation-ex-anchor" href="#&#x541E;&#x5410;&#x7387;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x541E;&#x5410;&#x7387;</h2>
+<h2 id="2-cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;"><a name="2-cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;" class="anchor-navigation-ex-anchor" href="#2-cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Cache&#x7684;&#x5730;&#x5740;&#x6620;&#x5C04;&#x548C;&#x5730;&#x5740;&#x53D8;&#x6362;</h2>
+<h3 id="21-&#x5168;&#x76F8;&#x8054;"><a name="21-&#x5168;&#x76F8;&#x8054;" class="anchor-navigation-ex-anchor" href="#21-&#x5168;&#x76F8;&#x8054;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x5168;&#x76F8;&#x8054;</h3>
 <blockquote>
-<p>&#x541E;&#x5410;&#x7387; : &#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x5185;&#x6D41;&#x6C34;&#x7EBF;&#x6240;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x6570;&#x6216;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x91CF;</p>
+<p><strong>&#x968F;&#x4FBF;&#x5B58;</strong> : &#x4E3B;&#x5B58;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x5757;&#x53EF;&#x4EE5;&#x6620;&#x5C04;&#x5230;Cache&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x5757;</p>
 </blockquote>
-<p>&#x6700;&#x5927;&#x541E;&#x5410;&#x7387;TPmax : &#x6D41;&#x6C34;&#x7EBF;&#x5728;<strong>&#x8FBE;&#x5230;&#x7A33;&#x5B9A;&#x72B6;&#x6001;</strong>&#x540E;&#x6240;&#x5F97;&#x5230;&#x7684;&#x541E;&#x5410;&#x7387;</p>
-<center><img src="https://youpai.roccoshi.top/img/20200719154438.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x6700;&#x5927;&#x541E;&#x5410;&#x7387;</div> </center>
+<p><strong>&#x7279;&#x70B9;</strong> : </p>
+<ul>
+<li>&#x4F18;&#x70B9; : &#x5757;&#x51B2;&#x7A81;&#x6982;&#x7387;&#x4F4E;, Cache&#x7A7A;&#x95F4;&#x5229;&#x7528;&#x7387;&#x9AD8;</li>
+<li><p>&#x7F3A;&#x70B9; : &#x76F8;&#x8054;&#x76EE;&#x5F55;&#x8868;&#x5BB9;&#x91CF;&#x5927; -- &#x6210;&#x672C;&#x9AD8;, &#x67E5;&#x627E;&#x901F;&#x5EA6;&#x6162;</p>
+<center><img src="https://youpai.roccoshi.top/img/20200718114344.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x5168;&#x76F8;&#x8054;</div> </center>
 
-<p><strong>&#x74F6;&#x9888;&#x6BB5; :</strong> </p>
-<center><img src="https://youpai.roccoshi.top/img/20200719154605.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x542B;&#x6709;&#x74F6;&#x9888;&#x6BB5;&#x7684;&#x6D41;&#x6C34;&#x7EBF;&#x7ED3;&#x6784;</div> </center>
+</li>
+</ul>
+<h3 id="22-&#x76F4;&#x63A5;&#x6620;&#x5C04;"><a name="22-&#x76F4;&#x63A5;&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#22-&#x76F4;&#x63A5;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x76F4;&#x63A5;&#x6620;&#x5C04;</h3>
+<blockquote>
+<p>&#x89C4;&#x5219; : &#x4E3B;&#x5B58;&#x7684;&#x6BCF;&#x4E00;&#x5757;&#x53EA;&#x80FD;&#x6620;&#x5C04;&#x5230;Cache&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5757;&#x4E2D;</p>
+<ul>
+<li>&#x6574;&#x4E2A;Cache&#x5730;&#x5740;&#x4E0E;&#x4E3B;&#x5B58;&#x5730;&#x5740;&#x7684;&#x4F4E;&#x4F4D;&#x90E8;&#x5206;&#x5B8C;&#x5168;&#x76F8;&#x540C;</li>
+</ul>
+</blockquote>
+<p><strong>&#x4F18;&#x70B9; :</strong> </p>
+<ul>
+<li>&#x786C;&#x4EF6;&#x7B80;&#x5355;, &#x4E0D;&#x9700;&#x8981;&#x76F8;&#x8054;&#x5B58;&#x50A8;&#x5668;, &#x53EA;&#x8981;<ul>
+<li>&#x5BB9;&#x91CF;&#x8F83;&#x5C0F;&#x7684;&#x6309;&#x5730;&#x5740;&#x8BBF;&#x95EE;&#x7684;<strong>&#x533A;&#x53F7;</strong>&#x6807;&#x5FD7;&#x8868;&#x5B58;&#x50A8;&#x5668;</li>
+<li>&#x5C11;&#x91CF;&#x5916;&#x6BD4;&#x8F83;&#x7535;&#x8DEF;</li>
+</ul>
+</li>
+<li>&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x5FEB; ( <strong>&#x65E0;&#x9700;&#x5730;&#x5740;&#x53D8;&#x6362;</strong> ) </li>
+</ul>
+<p><strong>&#x7F3A;&#x70B9; :</strong></p>
+<ul>
+<li><p>Cache&#x5757;&#x51B2;&#x7A81;&#x6982;&#x7387;&#x9AD8;</p>
+</li>
+<li><p>Cache&#x7A7A;&#x95F4;&#x5229;&#x7528;&#x7387;&#x5F88;&#x4F4E; </p>
+</li>
+</ul>
+<center><img src="https://youpai.roccoshi.top/img/20200718115628.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x76F4;&#x63A5;&#x6620;&#x5C04;</div> </center>
 
-<p><strong>&#x7EC6;&#x5206;&#x74F6;&#x9888;&#x6BB5;</strong> : </p>
-<center><img src="https://youpai.roccoshi.top/img/20200719154826.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x7EC6;&#x5206;&#x74F6;&#x9888;&#x6BB5;</div> </center>
+<h2 id="23-&#x7EC4;&#x76F8;&#x8054;"><a name="23-&#x7EC4;&#x76F8;&#x8054;" class="anchor-navigation-ex-anchor" href="#23-&#x7EC4;&#x76F8;&#x8054;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 &#x7EC4;&#x76F8;&#x8054;</h2>
+<blockquote>
+<p>&#x5C06;&#x4E3B;&#x5B58;&#x5206;&#x533A;&#x518D;&#x5206;&#x7EC4;,<strong>&#x7EC4;&#x95F4;&#x76F4;&#x63A5;&#x6620;&#x5C04;, &#x7EC4;&#x5185;&#x5168;&#x76F8;&#x8054;</strong></p>
+</blockquote>
+<p><strong>&#x4F18;&#x70B9;</strong> : </p>
+<ul>
+<li>&#x5757;&#x7684;&#x51B2;&#x7A81;&#x6982;&#x7387;&#x8F83;&#x4F4E;</li>
+<li>&#x5757;&#x7684;&#x5229;&#x7528;&#x7387;&#x5927;&#x5E45;&#x5EA6;&#x63D0;&#x9AD8;</li>
+<li>&#x5757;&#x7684;&#x5931;&#x6548;&#x7387;&#x660E;&#x663E;&#x964D;&#x4F4E;</li>
+</ul>
+<p><strong>&#x7F3A;&#x70B9;</strong> : </p>
+<ul>
+<li><p>&#x5B9E;&#x73B0;&#x96BE;&#x5EA6;&#x548C;&#x9020;&#x4EF7;&#x6BD4;&#x76F4;&#x63A5;&#x6620;&#x5C04;&#x7684;&#x65B9;&#x5F0F;&#x9AD8;</p>
+<center><img src="https://youpai.roccoshi.top/img/20200718141502.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x7EC4;&#x76F8;&#x8054;</div> </center>
 
-<p><strong>&#x91CD;&#x590D;&#x8BBE;&#x7F6E;&#x74F6;&#x9888;&#x6BB5;</strong> :</p>
-<center><img src="https://youpai.roccoshi.top/img/20200719154928.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x91CD;&#x590D;&#x8BBE;&#x7F6E;&#x74F6;&#x9888;&#x6BB5;</div> </center>
+</li>
+</ul>
+<h2 id="3-&#x4F8B;&#x9898;"><a name="3-&#x4F8B;&#x9898;" class="anchor-navigation-ex-anchor" href="#3-&#x4F8B;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x4F8B;&#x9898;</h2>
+<center><img src="https://youpai.roccoshi.top/img/20200718142426.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x4F8B;&#x9898;1</div> </center>
 
-<p><strong>&#x5B9E;&#x9645;&#x541E;&#x5410;&#x7387;</strong> : </p>
-<center><img src="https://youpai.roccoshi.top/img/20200719155519.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x5B9E;&#x9645;&#x541E;&#x5410;&#x7387;</div> </center>
+<center><img src="https://youpai.roccoshi.top/img/20200718142947.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x4F8B;&#x9898;2</div> </center>
 
+<blockquote>
+<p>&#x4F8B;&#x9898;&#x4E8C;&#x4E2D;&#x6CE8;&#x610F; : &#x7EC4;&#x53F7;&#x548C;Cache&#x7EC4;&#x5185;&#x5757;&#x53F7;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x7ED9;&#x51FA;, &#x56E0;&#x4E3A;&#x5C31;&#x662F;&#x76EE;&#x5F55;&#x8868;&#x7684;&#x5E8F;&#x53F7;</p>
+</blockquote>
+ <center><img src="https://youpai.roccoshi.top/img/20200718144411.png"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">&#x4F8B;&#x9898;3</div> </center>
 
-
-
-
+<p><strong>Cache&#x4E2D;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x7684;&#x5176;&#x4ED6;&#x4FE1;&#x606F;</strong> : </p>
+<ul>
+<li>&#x6709;&#x6548;&#x4F4D;</li>
+<li>&#x4FEE;&#x6539;&#x4F4D;</li>
+<li>&#x8BA1;&#x6570;&#x5668; ( &#x66FF;&#x6362;&#x7B56;&#x7565; )</li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
 2020-08-12 16:07:36
 </span></footer>
@@ -1922,12 +1977,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 7. 流水线">
+                <a href="4.1 存储系统概述.html" class="navigation navigation-prev " aria-label="Previous page: 4.1 存储系统概述">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="7.2 加速比和效率.html" class="navigation navigation-next " aria-label="Next page: 7.2 加速比和效率">
+                <a href="4.3 Cache替换算法 性能计算.html" class="navigation navigation-next " aria-label="Next page: 4.3 Cache替换算法 性能计算">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1938,7 +1993,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1 流水线时空图和吞吐率","level":"1.2.3.6.1","depth":4,"next":{"title":"7.2 加速比和效率","level":"1.2.3.6.2","depth":4,"path":"roccoshi_note/02-计算机组成原理/7. 流水线/7.2 加速比和效率.md","ref":"roccoshi_note/02-计算机组成原理/7. 流水线/7.2 加速比和效率.md","articles":[]},"previous":{"title":"7. 流水线","level":"1.2.3.6","depth":3,"path":"roccoshi_note/02-计算机组成原理/7. 流水线/README.md","ref":"roccoshi_note/02-计算机组成原理/7. 流水线/README.md","articles":[{"title":"7.1 流水线时空图和吞吐率","level":"1.2.3.6.1","depth":4,"path":"roccoshi_note/02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.md","ref":"roccoshi_note/02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.md","articles":[]},{"title":"7.2 加速比和效率","level":"1.2.3.6.2","depth":4,"path":"roccoshi_note/02-计算机组成原理/7. 流水线/7.2 加速比和效率.md","ref":"roccoshi_note/02-计算机组成原理/7. 流水线/7.2 加速比和效率.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","summary","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"summary":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.md","mtime":"2020-08-12T08:07:36.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-12T08:08:14.158Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2 Cache全相联组相联","level":"1.2.3.3.2","depth":4,"next":{"title":"4.3 Cache替换算法 性能计算","level":"1.2.3.3.3","depth":4,"path":"roccoshi_note/02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.md","ref":"roccoshi_note/02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.md","articles":[]},"previous":{"title":"4.1 存储系统概述","level":"1.2.3.3.1","depth":4,"path":"roccoshi_note/02-计算机组成原理/4. 存储系统/4.1 存储系统概述.md","ref":"roccoshi_note/02-计算机组成原理/4. 存储系统/4.1 存储系统概述.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","summary","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"summary":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/02-计算机组成原理/4. 存储系统/4.2 Cache全相联组相联.md","mtime":"2020-08-12T08:07:36.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-12T08:08:14.158Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
