@@ -13,7 +13,7 @@ jobs:
       uses: zanderzhao/gitbook-action@v1.2.2
       with:
         token: ${{ secrets.PERSONAL_TOKEN }}
-        publish_cname: github.roccoshi.top
+        publish_cname: note.roccoshi.top
         publish_push_force: true
         source_edit_time: true
         time_zone: Asia/Shanghai
