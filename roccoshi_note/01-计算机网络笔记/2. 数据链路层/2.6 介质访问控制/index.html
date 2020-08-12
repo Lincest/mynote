@@ -1,0 +1,874 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.6 介质访问控制 · roccoshi-note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="roccoshi">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.6.1 信道划分介质访问控制.html" />
+    
+    
+    <link rel="prev" href="../2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">roccoshi_note</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../Java学习/">
+            
+                <a href="../../../Java学习/">
+            
+                    
+                    Java学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../Java学习/1. JAVA的基本程序设计结构.html">
+            
+                <a href="../../../Java学习/1. JAVA的基本程序设计结构.html">
+            
+                    
+                    1. JAVA的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../Java学习/2. JAVA的类与对象.html">
+            
+                <a href="../../../Java学习/2. JAVA的类与对象.html">
+            
+                    
+                    2. JAVA的类与对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../Java学习/3. JAVA的继承---多态_抽象.html">
+            
+                <a href="../../../Java学习/3. JAVA的继承---多态_抽象.html">
+            
+                    
+                    3. JAVA的继承---多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../Java学习/4. ArrayList.html">
+            
+                <a href="../../../Java学习/4. ArrayList.html">
+            
+                    
+                    4. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../Java学习/5. String.html">
+            
+                <a href="../../../Java学习/5. String.html">
+            
+                    
+                    5. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../Java学习/6. 接口.html">
+            
+                <a href="../../../Java学习/6. 接口.html">
+            
+                    
+                    6. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../../Java学习/7. Date,_DateFormat,_Calendar类.html">
+            
+                <a href="../../../Java学习/7. Date,_DateFormat,_Calendar类.html">
+            
+                    
+                    7. Date类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../../Java学习/8. System类_StringBuilder.html">
+            
+                <a href="../../../Java学习/8. System类_StringBuilder.html">
+            
+                    
+                    8. System类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../../Java学习/9-包装类.html">
+            
+                <a href="../../../Java学习/9-包装类.html">
+            
+                    
+                    9. 包装类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../../Java学习/10-Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                <a href="../../../Java学习/10-Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                    
+                    10. 集合Collection iterator迭代器 foreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../../Java学习/11-泛型.html">
+            
+                <a href="../../../Java学习/11-泛型.html">
+            
+                    
+                    11. 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../操作系统笔记/">
+            
+                <a href="../../../操作系统笔记/">
+            
+                    
+                    操作系统笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../操作系统笔记/1. 信号量.html">
+            
+                <a href="../../../操作系统笔记/1. 信号量.html">
+            
+                    
+                    1. 信号量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../操作系统笔记/2. 死锁的检测和解除.html">
+            
+                <a href="../../../操作系统笔记/2. 死锁的检测和解除.html">
+            
+                    
+                    2. 死锁的检测和解除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../操作系统笔记/3. 分页存储.html">
+            
+                <a href="../../../操作系统笔记/3. 分页存储.html">
+            
+                    
+                    3. 分页存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../操作系统笔记/4. 分段存储.html">
+            
+                <a href="../../../操作系统笔记/4. 分段存储.html">
+            
+                    
+                    4. 分段存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../../操作系统笔记/5. 内存管理.html">
+            
+                <a href="../../../操作系统笔记/5. 内存管理.html">
+            
+                    
+                    5. 内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../../操作系统笔记/6. 文件管理.html">
+            
+                <a href="../../../操作系统笔记/6. 文件管理.html">
+            
+                    
+                    6. 文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../../操作系统笔记/7. 磁盘.html">
+            
+                <a href="../../../操作系统笔记/7. 磁盘.html">
+            
+                    
+                    7. 磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../../操作系统笔记/8. 设备管理.html">
+            
+                <a href="../../../操作系统笔记/8. 设备管理.html">
+            
+                    
+                    8. 设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    计算机网络笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../1. 物理层/">
+            
+                <a href="../../1. 物理层/">
+            
+                    
+                    1. 物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                <a href="../../1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                    
+                    1.1 码元, 波特, 速率, 带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                <a href="../../1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                    
+                    1.2 奎斯特定理和香农定理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../1. 物理层/1.3 编码与调制.html">
+            
+                <a href="../../1. 物理层/1.3 编码与调制.html">
+            
+                    
+                    1.3 编码与调制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                <a href="../../1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                    
+                    1.4 传输介质 物理层设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    2. 数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../2.1 数据链路层基本概念和功能.html">
+            
+                <a href="../2.1 数据链路层基本概念和功能.html">
+            
+                    
+                    2.1 数据链路层基本概念和功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../2.2 封装成帧的几种方法.html">
+            
+                <a href="../2.2 封装成帧的几种方法.html">
+            
+                    
+                    2.2 封装成帧的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../2.3 检错编码--CRC 奇偶校验码.html">
+            
+                <a href="../2.3 检错编码--CRC 奇偶校验码.html">
+            
+                    
+                    2.3 检错编码: CRC冗余循环校验码 奇偶校验码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../2.4 纠错编码--海明码.html">
+            
+                <a href="../2.4 纠错编码--海明码.html">
+            
+                    
+                    2.4 纠错编码: 海明码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../2.5 流量控制和可靠传输/">
+            
+                <a href="../2.5 流量控制和可靠传输/">
+            
+                    
+                    2.5 流量控制和可靠传输
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.5.1" data-path="../2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                <a href="../2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                    
+                    2.5.1 停止-等待协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5.2" data-path="../2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                <a href="../2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                    
+                    2.5.2 后退N帧协议GBN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5.3" data-path="../2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                <a href="../2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                    
+                    2.5.3 选择重传协议SR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2.6 介质访问控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1" data-path="2.6.1 信道划分介质访问控制.html">
+            
+                <a href="2.6.1 信道划分介质访问控制.html">
+            
+                    
+                    2.6.1 信道划分介质访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2" data-path="2.6.2 ALOHA协议.html">
+            
+                <a href="2.6.2 ALOHA协议.html">
+            
+                    
+                    2.6.2 ALOHA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../常用的linux命令/">
+            
+                <a href="../../../常用的linux命令/">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >2.6 介质访问控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><b></b>&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;"><b></b>&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;</a></li><li><span class="title-icon "></span><a href="#&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;_1"><b></b>&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><b></b>&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;"><b></b>&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;</a></li></ul></ul></ul></div><a href="#&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><a name="&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h1>
+<h2 id="&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;"><a name="&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x8F93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x94FE;&#x8DEF;</h2>
+<ol>
+<li><strong>&#x70B9;&#x5BF9;&#x70B9;&#x94FE;&#x8DEF;</strong> : &#x4E24;&#x4E2A;&#x76F8;&#x90BB;&#x7ED3;&#x70B9;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x94FE;&#x8DEF;&#x76F8;&#x8FDE;, &#x6CA1;&#x6709;&#x7B2C;&#x4E09;&#x8005;<ul>
+<li>&#x5E94;&#x7528; : PPP&#x534F;&#x8BAE;, &#x5E38;&#x7528;&#x4E8E;&#x5E7F;&#x57DF;&#x7F51;</li>
+</ul>
+</li>
+<li><strong>&#x5E7F;&#x64AD;&#x5F0F;&#x94FE;&#x8DEF;</strong> : &#x6240;&#x6709;&#x4E3B;&#x673A;&#x5171;&#x4EAB;&#x901A;&#x4FE1;&#x4ECB;&#x8D28;<ul>
+<li>&#x5E94;&#x7528; : &#x65E9;&#x671F;&#x7684;&#x603B;&#x7EBF;&#x4EE5;&#x592A;&#x7F51;&#x548C;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;,  &#x5E38;&#x7528;&#x4E8E;&#x5C40;&#x57DF;&#x7F51; </li>
+<li>&#x5178;&#x578B;&#x62D3;&#x6251;&#x7ED3;&#x6784; : &#x603B;&#x7EBF;&#x578B;, &#x661F;&#x578B;</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;_1"><a name="&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;_1" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h2>
+<p>&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x662F;, <strong>&#x91C7;&#x53D6;&#x4E00;&#x5B9A;&#x7684;&#x63AA;&#x65BD;, &#x4F7F;&#x5F97;&#x4E24;&#x5BF9;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x76F8;&#x4E92;&#x5E72;&#x6270;&#x7684;&#x60C5;&#x51B5;</strong></p>
+<h3 id="&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><a name="&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9759;&#x6001;&#x5212;&#x5206;&#x4FE1;&#x9053;---&#x4FE1;&#x9053;&#x5212;&#x5206;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h3>
+<ul>
+<li><strong>&#x9891;&#x5206;&#x591A;&#x8DEF;&#x590D;&#x7528;FDM ( Frequency-division multiplexing )</strong></li>
+<li><strong>&#x65F6;&#x5206;&#x591A;&#x8DEF;&#x590D;&#x7528;TDM ( Time-division multiplexing )</strong></li>
+<li><strong>&#x7801;&#x5206;&#x591A;&#x8DEF;&#x590D;&#x7528;CDM ( Code-division multiplexing)</strong></li>
+<li><strong>&#x6CE2;&#x5206;&#x591A;&#x8DEF;&#x590D;&#x7528;WDM ( Wavelength-division multiplexing )</strong></li>
+</ul>
+<h3 id="&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;"><a name="&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x6001;&#x5206;&#x914D;&#x4FE1;&#x9053;</h3>
+<ul>
+<li><strong>&#x8F6E;&#x8BE2;&#x8BBF;&#x95EE;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</strong> </li>
+<li>&#x4EE4;&#x724C;&#x4F20;&#x9012;&#x534F;&#x8BAE;</li>
+<li><p><strong>&#x968F;&#x673A;&#x8BBF;&#x95EE;&#x4ECB;&#x8D28;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</strong></p>
+<ul>
+<li><strong>ALOHA&#x534F;&#x8BAE;</strong></li>
+<li><strong>CSMA&#x534F;&#x8BAE;</strong></li>
+<li><strong>CSMA/CD&#x534F;&#x8BAE;</strong></li>
+<li><strong>CSMA/CA&#x534F;&#x8BAE;</strong></li>
+</ul>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
+2020-07-08 22:41:59
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html" class="navigation navigation-prev " aria-label="Previous page: 2.5.3 选择重传协议SR">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.6.1 信道划分介质访问控制.html" class="navigation navigation-next " aria-label="Next page: 2.6.1 信道划分介质访问控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.6 介质访问控制","level":"1.4.2.6","depth":3,"next":{"title":"2.6.1 信道划分介质访问控制","level":"1.4.2.6.1","depth":4,"path":"roccoshi_note/计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.md","ref":"roccoshi_note/计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.md","articles":[]},"previous":{"title":"2.5.3 选择重传协议SR","level":"1.4.2.5.3","depth":4,"path":"roccoshi_note/计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.md","ref":"roccoshi_note/计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","splitter","katex","pageview-count","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["summary","back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/计算机网络笔记/2. 数据链路层/2.6 介质访问控制/README.md","mtime":"2020-07-08T14:41:59.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T06:22:45.619Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

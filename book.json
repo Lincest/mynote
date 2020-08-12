@@ -1,0 +1,45 @@
+{
+    "author": "roccoshi",
+    "title": "roccoshi-note",
+    "description": "hello world",
+    "language": "zh-hans",
+    "plugins": [
+        "hide-element","anchor-navigation-ex","summary",
+        "code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr", "-search", "search-plus"
+    ],
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "code": {
+            "copyButtons": true
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy note.roccoshi.top 2020",
+            "modify_label": "update time：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "anchor-navigation-ex" : {
+            "showLevel": false,
+            "associatedWithSummary": false,
+            "printLog": false,
+            "multipleH1": false,
+            "mode": "float",
+            "showGoTop":true,
+            "float": {
+                "floatIcon": "fa fa-navicon",
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        }
+    },
+    "plugins-notshow":["back-to-top-button"]
+}
