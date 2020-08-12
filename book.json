@@ -4,7 +4,7 @@
     "description": "hello world",
     "language": "zh-hans",
     "plugins": [
-        "hide-element","anchor-navigation-ex","summary",
+        "hide-element","anchor-navigation-ex",
         "code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
