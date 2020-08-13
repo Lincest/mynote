@@ -119,7 +119,7 @@ $$
 \text{I}_{\text{BQ}}\,\, \text{I}_{\text{CQ}}\,\, \text{U}_{\text{BEQ}}\,\, \text{U}_{\text{CEQ}}
 $$
 
-> 首先Ube可以直接由硅/锗管确定 ( 0.7 0.2) 然后由电压关系计算Ibq -- Icq 最后计算Uceq
+> 首先Ube可以直接由硅/锗管确定 ( 0.7 0.3) 然后由电压关系计算Ibq -- Icq 最后计算Uceq
 
 **2.3 | 微变等效电路的画法 ( 交流通路---三个级---等效电路---用微变模型替换 )**
 
@@ -128,6 +128,10 @@ $$
 $$r_{b e}=r_{b b}+(1+\beta) \frac{26}{I_{E Q}}(\Omega) \quad\left(I_{E Q} \text { 取 } m A\right)$$
 
 **2.4 | 表2-2 三种基本组态放大电路的分析 共基 共射 共集 以及各自的特点**
+
+![ppt中的总结](https://youpai.roccoshi.top/img/20200813095516.png)
+
+
 
 <center><img src="https://youpai.roccoshi.top/img/20200806183742.png" style="width:70%"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">表2-2</div> </center>
 
@@ -260,7 +264,7 @@ $$
 
 <center><img src="https://youpai.roccoshi.top/img/20200807003222.png" style="width:70%"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;">6.2.6 一般输入信号情况 | 例题</div> </center>
 
-> - 差模放大倍数为负
+> - 差模放大倍数为负 ( 双端输入 )
 > - 差模输入为u1 - u2 ( 而不是u2 - u1, 不一样 )
 > - 要把dB化为比例的值
 
