@@ -1,6 +1,6 @@
 ## 考纲
 
-![](https://youpai.roccoshi.top/img/20200813124905.png)1
+![](https://youpai.roccoshi.top/img/20200813124905.png)
 
 ![](https://youpai.roccoshi.top/img/20200813124918.png)
 
@@ -13,3 +13,4 @@
 ![](https://youpai.roccoshi.top/img/20200813124959.png)
 
 ![](https://youpai.roccoshi.top/img/20200813125003.png)
+
