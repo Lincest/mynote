@@ -121,3 +121,6 @@
     - [常用的linux命令](roccoshi_note/04-linux学习/常用的linux命令/README.md)
   - [05-github操作](roccoshi_note/05-github操作/README.md)
   - [06-模电](roccoshi_note/06-模电/README.md)
+  - [07-前端学习](roccoshi_note/07-前端学习/README.md)
+    - 01.Javascript
+      * [01.BOM](roccoshi_note/07-前端学习/01.Javascript/01.BOM.md)
