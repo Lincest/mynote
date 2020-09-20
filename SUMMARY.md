@@ -125,6 +125,7 @@
     - [01.Javascript](roccoshi_note/07-前端学习/01.Javascript/README.md)
       * [01.基本语法](roccoshi_note/07-前端学习/01.Javascript/01.基本语法.md)
       * [02.函数](roccoshi_note/07-前端学习/01.Javascript/02.函数.md)
+      * [03.标准函数](roccoshi_note/07-前端学习/01.Javascript/03.标准函数.md)
   - [08-Flask学习](roccoshi_note/08-Flask学习/README.md)
     * [01.pipenv环境搭建](roccoshi_note/08-Flask学习/01.pipenv环境搭建.md)
     * [02.部署上线](roccoshi_note/08-Flask学习/02.部署上线.md)
