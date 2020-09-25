@@ -133,6 +133,7 @@
         * [5.1 选择器](roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.1 选择器.md)
         * [5.2 层级选择器](roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.2 层级选择器.md)
         * [5.3 查找与过滤](roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.3 查找与过滤.md)
+        * [5.4 操作DOM](roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.4 操作DOM.md)
       * [01.基本语法](roccoshi_note/07-前端学习/01.Javascript/01.基本语法.md)
       * [02.函数](roccoshi_note/07-前端学习/01.Javascript/02.函数.md)
       * [03.标准对象](roccoshi_note/07-前端学习/01.Javascript/03.标准对象.md)
