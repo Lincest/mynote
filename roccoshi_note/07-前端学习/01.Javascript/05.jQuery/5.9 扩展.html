@@ -1,0 +1,2426 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.9 扩展 · roccoshi-note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="roccoshi">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../01.基本语法.html" />
+    
+    
+    <link rel="prev" href="5.8 AJAX.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Roccoshi Note
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../00-操作系统笔记/">
+            
+                <a href="../../../00-操作系统笔记/">
+            
+                    
+                    00-操作系统笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../00-操作系统笔记/0. 作业管理 进程管理.html">
+            
+                <a href="../../../00-操作系统笔记/0. 作业管理 进程管理.html">
+            
+                    
+                    0. 作业管理 进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../00-操作系统笔记/1. 信号量.html">
+            
+                <a href="../../../00-操作系统笔记/1. 信号量.html">
+            
+                    
+                    1. 信号量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../00-操作系统笔记/2. 死锁的检测和解除.html">
+            
+                <a href="../../../00-操作系统笔记/2. 死锁的检测和解除.html">
+            
+                    
+                    2. 死锁的检测和解除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../00-操作系统笔记/3. 分页存储.html">
+            
+                <a href="../../../00-操作系统笔记/3. 分页存储.html">
+            
+                    
+                    3. 分页存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../../00-操作系统笔记/4. 分段存储  段页式  请求分页.html">
+            
+                <a href="../../../00-操作系统笔记/4. 分段存储  段页式  请求分页.html">
+            
+                    
+                    4. 分段存储  段页式  请求分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../../00-操作系统笔记/5. 内存管理.html">
+            
+                <a href="../../../00-操作系统笔记/5. 内存管理.html">
+            
+                    
+                    5. 内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../../../00-操作系统笔记/6. 文件管理.html">
+            
+                <a href="../../../00-操作系统笔记/6. 文件管理.html">
+            
+                    
+                    6. 文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../../../00-操作系统笔记/7. 磁盘.html">
+            
+                <a href="../../../00-操作系统笔记/7. 磁盘.html">
+            
+                    
+                    7. 磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../../../00-操作系统笔记/8. 设备管理.html">
+            
+                <a href="../../../00-操作系统笔记/8. 设备管理.html">
+            
+                    
+                    8. 设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../01-计算机网络笔记/">
+            
+                <a href="../../../01-计算机网络笔记/">
+            
+                    
+                    01-计算机网络笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../01-计算机网络笔记/1. 物理层/">
+            
+                <a href="../../../01-计算机网络笔记/1. 物理层/">
+            
+                    
+                    1. 物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../../01-计算机网络笔记/1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                <a href="../../../01-计算机网络笔记/1. 物理层/1.1 码元 波特 速率 带宽.html">
+            
+                    
+                    1.1 码元 波特 速率 带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../../01-计算机网络笔记/1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                <a href="../../../01-计算机网络笔记/1. 物理层/1.2 奈奎斯特定理和香农定理.html">
+            
+                    
+                    1.2 奈奎斯特定理和香农定理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../../01-计算机网络笔记/1. 物理层/1.3 编码与调制.html">
+            
+                <a href="../../../01-计算机网络笔记/1. 物理层/1.3 编码与调制.html">
+            
+                    
+                    1.3 编码与调制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.4" data-path="../../../01-计算机网络笔记/1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                <a href="../../../01-计算机网络笔记/1. 物理层/1.4 传输介质和物理层设备.html">
+            
+                    
+                    1.4 传输介质和物理层设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../01-计算机网络笔记/2. 数据链路层/">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/">
+            
+                    
+                    2. 数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/">
+            
+                    
+                    2.5 流量控制和可靠传输
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.1 停止-等待协议.html">
+            
+                    
+                    2.5.1 停止-等待协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.2 后退N帧协议GBN.html">
+            
+                    
+                    2.5.2 后退N帧协议GBN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.5 流量控制和可靠传输/2.5.3 选择重传协议SR.html">
+            
+                    
+                    2.5.3 选择重传协议SR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/">
+            
+                    
+                    2.6 介质访问控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.2.1" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.1 信道划分介质访问控制.html">
+            
+                    
+                    2.6.1 信道划分介质访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2.2" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.2 ALOHA协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.2 ALOHA协议.html">
+            
+                    
+                    2.6.2 ALOHA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2.3" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.3 CSMA协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.3 CSMA协议.html">
+            
+                    
+                    2.6.3 CSMA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2.4" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.4 CSMACD协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.4 CSMACD协议.html">
+            
+                    
+                    2.6.4 CSMACD协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2.5" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.5 CSMACA协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.5 CSMACA协议.html">
+            
+                    
+                    2.6.5 CSMACA协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2.6" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.6 轮询访问介质访问控制.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.6 介质访问控制/2.6.6 轮询访问介质访问控制.html">
+            
+                    
+                    2.6.6 轮询访问介质访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.1 数据链路层基本概念和功能.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.1 数据链路层基本概念和功能.html">
+            
+                    
+                    2.1 数据链路层基本概念和功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.2 封装成帧的几种方法.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.2 封装成帧的几种方法.html">
+            
+                    
+                    2.2 封装成帧的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.3 检错编码--CRC 奇偶校验码.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.3 检错编码--CRC 奇偶校验码.html">
+            
+                    
+                    2.3 检错编码--CRC 奇偶校验码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.6" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.4 纠错编码--海明码.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.4 纠错编码--海明码.html">
+            
+                    
+                    2.4 纠错编码--海明码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.7" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.7 局域网.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.7 局域网.html">
+            
+                    
+                    2.7 局域网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.8" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.8 广域网PPP协议HDLC协议.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.8 广域网PPP协议HDLC协议.html">
+            
+                    
+                    2.8 广域网PPP协议HDLC协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.9" data-path="../../../01-计算机网络笔记/2. 数据链路层/2.9 链路层设备--网桥交换机.html">
+            
+                <a href="../../../01-计算机网络笔记/2. 数据链路层/2.9 链路层设备--网桥交换机.html">
+            
+                    
+                    2.9 链路层设备--网桥交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../01-计算机网络笔记/3. 网络层/">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/">
+            
+                    
+                    3. 网络层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/">
+            
+                    
+                    3.12 路由算法和路由协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1.1" data-path="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.1 RIP协议和距离向量算法.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.1 RIP协议和距离向量算法.html">
+            
+                    
+                    3.12.1 RIP协议和距离向量算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.1.2" data-path="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.2 OSPF协议和链路状态算法.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.2 OSPF协议和链路状态算法.html">
+            
+                    
+                    3.12.2 OSPF协议和链路状态算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.1.3" data-path="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.3 BGP协议.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.3 BGP协议.html">
+            
+                    
+                    3.12.3 BGP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.1.4" data-path="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.4 三种路由协议的对比.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.12 路由算法和路由协议/3.12.4 三种路由协议的对比.html">
+            
+                    
+                    3.12.4 三种路由协议的对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../../01-计算机网络笔记/3. 网络层/3.01 数据交换方式.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.01 数据交换方式.html">
+            
+                    
+                    3.01 数据交换方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../../../01-计算机网络笔记/3. 网络层/3.02 数据报和虚电路.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.02 数据报和虚电路.html">
+            
+                    
+                    3.02 数据报和虚电路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.4" data-path="../../../01-计算机网络笔记/3. 网络层/3.03 IP数据报.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.03 IP数据报.html">
+            
+                    
+                    3.03 IP数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.5" data-path="../../../01-计算机网络笔记/3. 网络层/3.04 IP地址.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.04 IP地址.html">
+            
+                    
+                    3.04 IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.6" data-path="../../../01-计算机网络笔记/3. 网络层/3.05 网络地址转换NAT.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.05 网络地址转换NAT.html">
+            
+                    
+                    3.05 网络地址转换NAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.7" data-path="../../../01-计算机网络笔记/3. 网络层/3.06 子网.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.06 子网.html">
+            
+                    
+                    3.06 子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.8" data-path="../../../01-计算机网络笔记/3. 网络层/3.07 无分类编址CIDR.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.07 无分类编址CIDR.html">
+            
+                    
+                    3.07 无分类编址CIDR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9" data-path="../../../01-计算机网络笔记/3. 网络层/3.08 ARP协议.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.08 ARP协议.html">
+            
+                    
+                    3.08 ARP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10" data-path="../../../01-计算机网络笔记/3. 网络层/3.09 DHCP协议.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.09 DHCP协议.html">
+            
+                    
+                    3.09 DHCP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.11" data-path="../../../01-计算机网络笔记/3. 网络层/3.10 ICMP协议.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.10 ICMP协议.html">
+            
+                    
+                    3.10 ICMP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.12" data-path="../../../01-计算机网络笔记/3. 网络层/3.11 IPv6.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.11 IPv6.html">
+            
+                    
+                    3.11 IPv6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.13" data-path="../../../01-计算机网络笔记/3. 网络层/3.13 IP组播.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.13 IP组播.html">
+            
+                    
+                    3.13 IP组播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.14" data-path="../../../01-计算机网络笔记/3. 网络层/3.14 网络层设备.html">
+            
+                <a href="../../../01-计算机网络笔记/3. 网络层/3.14 网络层设备.html">
+            
+                    
+                    3.14 网络层设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../01-计算机网络笔记/4. 传输层/">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/">
+            
+                    
+                    4. 传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/">
+            
+                    
+                    4.2 TCP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1.1" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.1 TCP特点和报文段格式.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.1 TCP特点和报文段格式.html">
+            
+                    
+                    4.2.1 TCP特点和报文段格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.1.2" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.2 TCP连接管理.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.2 TCP连接管理.html">
+            
+                    
+                    4.2.2 TCP连接管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.1.3" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.3 TCP可靠传输.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.3 TCP可靠传输.html">
+            
+                    
+                    4.2.3 TCP可靠传输
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.1.4" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.4 TCP流量控制.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.4 TCP流量控制.html">
+            
+                    
+                    4.2.4 TCP流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.1.5" data-path="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.5 TCP拥塞控制.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.2 TCP协议/4.2.5 TCP拥塞控制.html">
+            
+                    
+                    4.2.5 TCP拥塞控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../../../01-计算机网络笔记/4. 传输层/4.1 UDP协议.html">
+            
+                <a href="../../../01-计算机网络笔记/4. 传输层/4.1 UDP协议.html">
+            
+                    
+                    4.1 UDP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../01-计算机网络笔记/5. 应用层/">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/">
+            
+                    
+                    5. 应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../../../01-计算机网络笔记/5. 应用层/5.1 网络应用模型.html">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/5.1 网络应用模型.html">
+            
+                    
+                    5.1 网络应用模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../../../01-计算机网络笔记/5. 应用层/5.2 DNS系统.html">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/5.2 DNS系统.html">
+            
+                    
+                    5.2 DNS系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../../../01-计算机网络笔记/5. 应用层/5.3 FTP.html">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/5.3 FTP.html">
+            
+                    
+                    5.3 FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../../../01-计算机网络笔记/5. 应用层/5.4 电子邮件.html">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/5.4 电子邮件.html">
+            
+                    
+                    5.4 电子邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.5" data-path="../../../01-计算机网络笔记/5. 应用层/5.5 HTTP.html">
+            
+                <a href="../../../01-计算机网络笔记/5. 应用层/5.5 HTTP.html">
+            
+                    
+                    5.5 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../01-计算机网络笔记/6. 考纲.html">
+            
+                <a href="../../../01-计算机网络笔记/6. 考纲.html">
+            
+                    
+                    6. 考纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../02-计算机组成原理/">
+            
+                <a href="../../../02-计算机组成原理/">
+            
+                    
+                    02-计算机组成原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../02-计算机组成原理/2. 数据表示--编码/">
+            
+                <a href="../../../02-计算机组成原理/2. 数据表示--编码/">
+            
+                    
+                    2. 数据表示--编码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../02-计算机组成原理/2. 数据表示--编码/2.1 原码 补码 反码.html">
+            
+                <a href="../../../02-计算机组成原理/2. 数据表示--编码/2.1 原码 补码 反码.html">
+            
+                    
+                    2.1 原码 补码 反码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../02-计算机组成原理/2. 数据表示--编码/2.2 移码 浮点数 IEEE754.html">
+            
+                <a href="../../../02-计算机组成原理/2. 数据表示--编码/2.2 移码 浮点数 IEEE754.html">
+            
+                    
+                    2.2 移码 浮点数 IEEE754
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../02-计算机组成原理/2. 数据表示--编码/2.3 检错和纠错码.html">
+            
+                <a href="../../../02-计算机组成原理/2. 数据表示--编码/2.3 检错和纠错码.html">
+            
+                    
+                    2.3 检错和纠错码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/">
+            
+                    
+                    3. 运算方法与运算器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.1" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/">
+            
+                    
+                    3.1 定点数运算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.1.1" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.1 加减运算.html">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.1 加减运算.html">
+            
+                    
+                    3.1.1 加减运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.1.2" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.2 乘法运算.html">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.2 乘法运算.html">
+            
+                    
+                    3.1.2 乘法运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.1.3" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.3 除法运算.html">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.1 定点数运算/3.1.3 除法运算.html">
+            
+                    
+                    3.1.3 除法运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/">
+            
+                    
+                    3.2 浮点数运算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.2.1" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.1 浮点数加减法.html">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.1 浮点数加减法.html">
+            
+                    
+                    3.1.1 浮点数加减法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.2" data-path="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.2 浮点数乘除法.html">
+            
+                <a href="../../../02-计算机组成原理/3. 运算方法与运算器/3.2 浮点数运算/3.1.2 浮点数乘除法.html">
+            
+                    
+                    3.1.2 浮点数乘除法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../../02-计算机组成原理/4. 存储系统/">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/">
+            
+                    
+                    4. 存储系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.1" data-path="../../../02-计算机组成原理/4. 存储系统/4.1 存储系统概述.html">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/4.1 存储系统概述.html">
+            
+                    
+                    4.1 存储系统概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2" data-path="../../../02-计算机组成原理/4. 存储系统/4.2 Cache全相联组相联.html">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/4.2 Cache全相联组相联.html">
+            
+                    
+                    4.2 Cache全相联组相联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3" data-path="../../../02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.html">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/4.3 Cache替换算法 性能计算.html">
+            
+                    
+                    4.3 Cache替换算法 性能计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.4" data-path="../../../02-计算机组成原理/4. 存储系统/4.4 虚拟存储器.html">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/4.4 虚拟存储器.html">
+            
+                    
+                    4.4 虚拟存储器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.5" data-path="../../../02-计算机组成原理/4. 存储系统/4.5 磁盘.html">
+            
+                <a href="../../../02-计算机组成原理/4. 存储系统/4.5 磁盘.html">
+            
+                    
+                    4.5 磁盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../../02-计算机组成原理/5. 指令系统/">
+            
+                <a href="../../../02-计算机组成原理/5. 指令系统/">
+            
+                    
+                    5. 指令系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.4.1" data-path="../../../02-计算机组成原理/5. 指令系统/5.1 存储模式与指令的分类.html">
+            
+                <a href="../../../02-计算机组成原理/5. 指令系统/5.1 存储模式与指令的分类.html">
+            
+                    
+                    5.1 存储模式与指令的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4.2" data-path="../../../02-计算机组成原理/5. 指令系统/5.2 指令设计.html">
+            
+                <a href="../../../02-计算机组成原理/5. 指令系统/5.2 指令设计.html">
+            
+                    
+                    5.2 指令设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../../02-计算机组成原理/6. CPU/">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/">
+            
+                    
+                    6. CPU
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../../02-计算机组成原理/6. CPU/6.1 CPU的功能与结构.html">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/6.1 CPU的功能与结构.html">
+            
+                    
+                    6.1 CPU的功能与结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../../02-计算机组成原理/6. CPU/6.2 微操作与微命令.html">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/6.2 微操作与微命令.html">
+            
+                    
+                    6.2 微操作与微命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.3" data-path="../../../02-计算机组成原理/6. CPU/6.3 硬布线控制器设计.html">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/6.3 硬布线控制器设计.html">
+            
+                    
+                    6.3 硬布线控制器设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.4" data-path="../../../02-计算机组成原理/6. CPU/6.4 微程序控制器设计.html">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/6.4 微程序控制器设计.html">
+            
+                    
+                    6.4 微程序控制器设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.5" data-path="../../../02-计算机组成原理/6. CPU/6.5 CPU性能测量.html">
+            
+                <a href="../../../02-计算机组成原理/6. CPU/6.5 CPU性能测量.html">
+            
+                    
+                    6.5 CPU性能测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../../../02-计算机组成原理/7. 流水线/">
+            
+                <a href="../../../02-计算机组成原理/7. 流水线/">
+            
+                    
+                    7. 流水线
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.6.1" data-path="../../../02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.html">
+            
+                <a href="../../../02-计算机组成原理/7. 流水线/7.1 流水线时空图和吞吐率.html">
+            
+                    
+                    7.1 流水线时空图和吞吐率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6.2" data-path="../../../02-计算机组成原理/7. 流水线/7.2 加速比和效率.html">
+            
+                <a href="../../../02-计算机组成原理/7. 流水线/7.2 加速比和效率.html">
+            
+                    
+                    7.2 加速比和效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../../../02-计算机组成原理/1. 绪论--冯诺依曼和Amdahl.html">
+            
+                <a href="../../../02-计算机组成原理/1. 绪论--冯诺依曼和Amdahl.html">
+            
+                    
+                    1. 绪论--冯诺依曼和Amdahl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../../../02-计算机组成原理/8. 总线-IO-DMA.html">
+            
+                <a href="../../../02-计算机组成原理/8. 总线-IO-DMA.html">
+            
+                    
+                    8. 总线-IO-DMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../../../02-计算机组成原理/9. 通道 并行性.html">
+            
+                <a href="../../../02-计算机组成原理/9. 通道 并行性.html">
+            
+                    
+                    9. 通道 并行性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../../../02-计算机组成原理/车老师雨课堂习题.html">
+            
+                <a href="../../../02-计算机组成原理/车老师雨课堂习题.html">
+            
+                    
+                    车老师雨课堂习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../03-Java学习/">
+            
+                <a href="../../../03-Java学习/">
+            
+                    
+                    03-Java学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../../03-Java学习/01. JAVA的基本程序设计结构.html">
+            
+                <a href="../../../03-Java学习/01. JAVA的基本程序设计结构.html">
+            
+                    
+                    01. JAVA的基本程序设计结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../../03-Java学习/02. JAVA的类与对象.html">
+            
+                <a href="../../../03-Java学习/02. JAVA的类与对象.html">
+            
+                    
+                    02. JAVA的类与对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../../03-Java学习/03. JAVA的继承---多态_抽象.html">
+            
+                <a href="../../../03-Java学习/03. JAVA的继承---多态_抽象.html">
+            
+                    
+                    03. JAVA的继承---多态_抽象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../../03-Java学习/04. ArrayList.html">
+            
+                <a href="../../../03-Java学习/04. ArrayList.html">
+            
+                    
+                    04. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../../03-Java学习/05. String.html">
+            
+                <a href="../../../03-Java学习/05. String.html">
+            
+                    
+                    05. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../../03-Java学习/06. 接口.html">
+            
+                <a href="../../../03-Java学习/06. 接口.html">
+            
+                    
+                    06. 接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="../../../03-Java学习/07. Date,_DateFormat,_Calendar类.html">
+            
+                <a href="../../../03-Java学习/07. Date,_DateFormat,_Calendar类.html">
+            
+                    
+                    07. Date,_DateFormat,_Calendar类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="../../../03-Java学习/08. System类_StringBuilder.html">
+            
+                <a href="../../../03-Java学习/08. System类_StringBuilder.html">
+            
+                    
+                    08. System类_StringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="../../../03-Java学习/09. 包装类.html">
+            
+                <a href="../../../03-Java学习/09. 包装类.html">
+            
+                    
+                    09. 包装类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="../../../03-Java学习/10. Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                <a href="../../../03-Java学习/10. Collection集合框架_iterator迭代器_增强for循环foreach.html">
+            
+                    
+                    10. Collection集合框架iterator迭代器增强for循环foreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.11" data-path="../../../03-Java学习/11. 泛型.html">
+            
+                <a href="../../../03-Java学习/11. 泛型.html">
+            
+                    
+                    11. 泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../04-linux学习/">
+            
+                <a href="../../../04-linux学习/">
+            
+                    
+                    04-linux学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../../04-linux学习/常用的linux命令/">
+            
+                <a href="../../../04-linux学习/常用的linux命令/">
+            
+                    
+                    常用的linux命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../05-github操作/">
+            
+                <a href="../../../05-github操作/">
+            
+                    
+                    05-github操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../../06-模电/">
+            
+                <a href="../../../06-模电/">
+            
+                    
+                    06-模电
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    07-前端学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    01.Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1.1" data-path="../04.浏览器/">
+            
+                <a href="../04.浏览器/">
+            
+                    
+                    04.浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1.1.1" data-path="../04.浏览器/4.1 浏览器对象.html">
+            
+                <a href="../04.浏览器/4.1 浏览器对象.html">
+            
+                    
+                    4.1 浏览器对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.1.2" data-path="../04.浏览器/4.2 操作DOM.html">
+            
+                <a href="../04.浏览器/4.2 操作DOM.html">
+            
+                    
+                    4.2 操作DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.1.3" data-path="../04.浏览器/4.3 操作表单.html">
+            
+                <a href="../04.浏览器/4.3 操作表单.html">
+            
+                    
+                    4.3 操作表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.1.4" data-path="../04.浏览器/4.4 操作文件.html">
+            
+                <a href="../04.浏览器/4.4 操作文件.html">
+            
+                    
+                    4.4 操作文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.1.5" data-path="../04.浏览器/4.5 AJAX.html">
+            
+                <a href="../04.浏览器/4.5 AJAX.html">
+            
+                    
+                    4.5 AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    05.jQuery
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1.2.1" data-path="5.1 选择器.html">
+            
+                <a href="5.1 选择器.html">
+            
+                    
+                    5.1 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.2" data-path="5.2 层级选择器.html">
+            
+                <a href="5.2 层级选择器.html">
+            
+                    
+                    5.2 层级选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.3" data-path="5.3 查找与过滤.html">
+            
+                <a href="5.3 查找与过滤.html">
+            
+                    
+                    5.3 查找与过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.4" data-path="5.4 操作DOM.html">
+            
+                <a href="5.4 操作DOM.html">
+            
+                    
+                    5.4 操作DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.5" data-path="5.5 修改DOM结构.html">
+            
+                <a href="5.5 修改DOM结构.html">
+            
+                    
+                    5.5 修改DOM结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.6" data-path="5.6 事件.html">
+            
+                <a href="5.6 事件.html">
+            
+                    
+                    5.6 事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.7" data-path="5.7 动画.html">
+            
+                <a href="5.7 动画.html">
+            
+                    
+                    5.7 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.2.8" data-path="5.8 AJAX.html">
+            
+                <a href="5.8 AJAX.html">
+            
+                    
+                    5.8 AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8.1.2.9" data-path="5.9 扩展.html">
+            
+                <a href="5.9 扩展.html">
+            
+                    
+                    5.9 扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.3" data-path="../01.基本语法.html">
+            
+                <a href="../01.基本语法.html">
+            
+                    
+                    01.基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.4" data-path="../02.函数.html">
+            
+                <a href="../02.函数.html">
+            
+                    
+                    02.函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.1.5" data-path="../03.标准对象.html">
+            
+                <a href="../03.标准对象.html">
+            
+                    
+                    03.标准对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../../08-Flask学习/">
+            
+                <a href="../../../08-Flask学习/">
+            
+                    
+                    08-Flask学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../../../08-Flask学习/01.pipenv环境搭建.html">
+            
+                <a href="../../../08-Flask学习/01.pipenv环境搭建.html">
+            
+                    
+                    01.pipenv环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../../../08-Flask学习/02.部署上线.html">
+            
+                <a href="../../../08-Flask学习/02.部署上线.html">
+            
+                    
+                    02.部署上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.3" data-path="../../../08-Flask学习/03.基础学习.html">
+            
+                <a href="../../../08-Flask学习/03.基础学习.html">
+            
+                    
+                    03.基础学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.4" data-path="../../../08-Flask学习/04.FLask与HTTP.html">
+            
+                <a href="../../../08-Flask学习/04.FLask与HTTP.html">
+            
+                    
+                    04.FLask与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.5" data-path="../../../08-Flask学习/05.模板.html">
+            
+                <a href="../../../08-Flask学习/05.模板.html">
+            
+                    
+                    05.模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >5.9 扩展</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#59-&#x6269;&#x5C55;"><b></b>5.9 &#x6269;&#x5C55;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x7F16;&#x5199;jquery&#x63D2;&#x4EF6;fn"><b></b>&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;$.fn</a></li><li><span class="title-icon "></span><a href="#&#x7F16;&#x5199;&#x4E00;&#x4E2A;jquery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;"><b></b>&#x7F16;&#x5199;&#x4E00;&#x4E2A;jQuery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;"><b></b>&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;</a></li></ul></ul></ul></div><a href="#59-&#x6269;&#x5C55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="59-&#x6269;&#x5C55;"><a name="59-&#x6269;&#x5C55;" class="anchor-navigation-ex-anchor" href="#59-&#x6269;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a>5.9 &#x6269;&#x5C55;</h1>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;jQuery&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;jQuery&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x4E00;&#x7EC4;DOM&#xFF0C;&#x800C;&#x4E14;&#x652F;&#x6301;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x4F46;&#x662F;jQuery&#x5185;&#x7F6E;&#x7684;&#x65B9;&#x6CD5;&#x6C38;&#x8FDC;&#x4E0D;&#x53EF;&#x80FD;&#x6EE1;&#x8DB3;&#x6240;&#x6709;&#x7684;&#x9700;&#x6C42;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x67D0;&#x4E9B;DOM&#x5143;&#x7D20;&#xFF0C;&#x7528;jQuery&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;span.hl&apos;</span>).css(<span class="hljs-string">&apos;backgroundColor&apos;</span>, <span class="hljs-string">&apos;#fffceb&apos;</span>).css(<span class="hljs-string">&apos;color&apos;</span>, <span class="hljs-string">&apos;#d85030&apos;</span>);
+
+$(<span class="hljs-string">&apos;p a.hl&apos;</span>).css(<span class="hljs-string">&apos;backgroundColor&apos;</span>, <span class="hljs-string">&apos;#fffceb&apos;</span>).css(<span class="hljs-string">&apos;color&apos;</span>, <span class="hljs-string">&apos;#d85030&apos;</span>);
+</code></pre>
+<p>&#x603B;&#x662F;&#x5199;&#x91CD;&#x590D;&#x4EE3;&#x7801;&#x53EF;&#x4E0D;&#x597D;&#xFF0C;&#x4E07;&#x4E00;&#x4EE5;&#x540E;&#x8FD8;&#x8981;&#x4FEE;&#x6539;&#x5B57;&#x4F53;&#x5C31;&#x66F4;&#x9EBB;&#x70E6;&#x4E86;&#xFF0C;&#x80FD;&#x4E0D;&#x80FD;&#x7EDF;&#x4E00;&#x8D77;&#x6765;&#xFF0C;&#x5199;&#x4E2A;<code>highlight()</code>&#x65B9;&#x6CD5;&#xFF1F;</p>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;span.hl&apos;</span>).highlight();
+
+$(<span class="hljs-string">&apos;p a.hl&apos;</span>).highlight();
+</code></pre>
+<p>&#x7B54;&#x6848;&#x662F;&#x80AF;&#x5B9A;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6269;&#x5C55;jQuery&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x3002;&#x5C06;&#x6765;&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x9AD8;&#x4EAE;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x53EA;&#x9700;&#x4FEE;&#x6539;&#x4E00;&#x5904;&#x6269;&#x5C55;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E5F;&#x79F0;&#x4E3A;&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;&#x3002;</p>
+<h3 id="&#x7F16;&#x5199;jquery&#x63D2;&#x4EF6;fn"><a name="&#x7F16;&#x5199;jquery&#x63D2;&#x4EF6;fn" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x5199;jquery&#x63D2;&#x4EF6;fn"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;<code>$.fn</code></h3>
+<p>&#x7ED9;jQuery&#x5BF9;&#x8C61;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x65B0;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x6269;&#x5C55;<code>$.fn</code>&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x2014;&#x2014;<code>highlight1()</code>&#xFF1A;</p>
+<pre><code class="lang-js">$.fn.highlight1 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// this&#x5DF2;&#x7ED1;&#x5B9A;&#x4E3A;&#x5F53;&#x524D;jQuery&#x5BF9;&#x8C61;:</span>
+    <span class="hljs-keyword">this</span>.css(<span class="hljs-string">&apos;backgroundColor&apos;</span>, <span class="hljs-string">&apos;#fffceb&apos;</span>).css(<span class="hljs-string">&apos;color&apos;</span>, <span class="hljs-string">&apos;#d85030&apos;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x5230;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;<code>this</code>&#x5728;&#x8C03;&#x7528;&#x65F6;&#x88AB;&#x7ED1;&#x5B9A;&#x4E3A;jQuery&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8C03;&#x7528;&#x6240;&#x6709;jQuery&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7EC6;&#x5FC3;&#x7684;&#x7AE5;&#x978B;&#x53EF;&#x80FD;&#x53D1;&#x73B0;&#x4E86;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6700;&#x540E;&#x8981;<code>return this;</code>&#xFF1F;&#x56E0;&#x4E3A;jQuery&#x5BF9;&#x8C61;&#x652F;&#x6301;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x6269;&#x5C55;&#x65B9;&#x6CD5;&#x4E5F;&#x8981;&#x80FD;&#x7EE7;&#x7EED;&#x94FE;&#x5F0F;&#x4E0B;&#x53BB;&#xFF1A;</p>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;span.hl&apos;</span>).highlight1().slideDown();
+</code></pre>
+<p>&#x4E0D;&#x7136;&#xFF0C;&#x7528;&#x6237;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x628A;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x62C6;&#x6210;&#x4E24;&#x884C;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x5E76;&#x4E0D;&#x5B8C;&#x7F8E;&#x3002;&#x6709;&#x7684;&#x7528;&#x6237;&#x5E0C;&#x671B;&#x9AD8;&#x4EAE;&#x7684;&#x989C;&#x8272;&#x80FD;&#x81EA;&#x5DF1;&#x6765;&#x6307;&#x5B9A;&#xFF0C;&#x600E;&#x4E48;&#x529E;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x65B9;&#x6CD5;&#x52A0;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x628A;&#x53C2;&#x6570;&#x7528;&#x5BF9;&#x8C61;&#x4F20;&#x8FDB;&#x53BB;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x6709;&#x4E86;&#x7B2C;&#x4E8C;&#x4E2A;&#x7248;&#x672C;&#x7684;<code>highlight2()</code>&#xFF1A;</p>
+<pre><code class="lang-js">$.fn.highlight2 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-comment">// &#x8981;&#x8003;&#x8651;&#x5230;&#x5404;&#x79CD;&#x60C5;&#x51B5;:</span>
+    <span class="hljs-comment">// options&#x4E3A;undefined</span>
+    <span class="hljs-comment">// options&#x53EA;&#x6709;&#x90E8;&#x5206;key</span>
+    <span class="hljs-keyword">var</span> bgcolor = options &amp;&amp; options.backgroundColor || <span class="hljs-string">&apos;#fffceb&apos;</span>;
+    <span class="hljs-keyword">var</span> color = options &amp;&amp; options.color || <span class="hljs-string">&apos;#d85030&apos;</span>;
+    <span class="hljs-keyword">this</span>.css(<span class="hljs-string">&apos;backgroundColor&apos;</span>, bgcolor).css(<span class="hljs-string">&apos;color&apos;</span>, color);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+}
+</code></pre>
+<h3 id="&#x7F16;&#x5199;&#x4E00;&#x4E2A;jquery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;"><a name="&#x7F16;&#x5199;&#x4E00;&#x4E2A;jquery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x5199;&#x4E00;&#x4E2A;jquery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x5199;&#x4E00;&#x4E2A;jQuery&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x5219;&#xFF1A;</h3>
+<ol>
+<li>&#x7ED9;<code>$.fn</code>&#x7ED1;&#x5B9A;&#x51FD;&#x6570;&#xFF0C;&#x5B9E;&#x73B0;&#x63D2;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#xFF1B;</li>
+<li>&#x63D2;&#x4EF6;&#x51FD;&#x6570;&#x6700;&#x540E;&#x8981;<code>return this;</code>&#x4EE5;&#x652F;&#x6301;&#x94FE;&#x5F0F;&#x8C03;&#x7528;&#xFF1B;</li>
+<li>&#x63D2;&#x4EF6;&#x51FD;&#x6570;&#x8981;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x7ED1;&#x5B9A;&#x5728;<code>$.fn.&lt;pluginName&gt;.defaults</code>&#x4E0A;&#xFF1B;</li>
+<li>&#x7528;&#x6237;&#x5728;&#x8C03;&#x7528;&#x65F6;&#x53EF;&#x4F20;&#x5165;&#x8BBE;&#x5B9A;&#x503C;&#x4EE5;&#x4FBF;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</li>
+</ol>
+<h3 id="&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;"><a name="&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;" class="anchor-navigation-ex-anchor" href="#&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;</h3>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;jQuery&#x5BF9;&#x8C61;&#x7684;&#x6709;&#x4E9B;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x4F5C;&#x7528;&#x5728;&#x7279;&#x5B9A;DOM&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x6BD4;&#x5982;<code>submit()</code>&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x9488;&#x5BF9;<code>form</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x6269;&#x5C55;&#x53EA;&#x80FD;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;DOM&#x5143;&#x7D20;&#xFF0C;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x5199;&#xFF1F;</p>
+<p>&#x8FD8;&#x8BB0;&#x5F97;jQuery&#x7684;&#x9009;&#x62E9;&#x5668;&#x652F;&#x6301;<code>filter()</code>&#x65B9;&#x6CD5;&#x6765;&#x8FC7;&#x6EE4;&#x5417;&#xFF1F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8981;&#x7ED9;&#x6240;&#x6709;&#x6307;&#x5411;&#x5916;&#x94FE;&#x7684;&#x8D85;&#x94FE;&#x63A5;&#x52A0;&#x4E0A;&#x8DF3;&#x8F6C;&#x63D0;&#x793A;&#xFF0C;&#x600E;&#x4E48;&#x505A;&#xFF1F;</p>
+<p>&#x5148;&#x5199;&#x51FA;&#x7528;&#x6237;&#x8C03;&#x7528;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;#main a&apos;</span>).external();
+</code></pre>
+<p>&#x7136;&#x540E;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x7F16;&#x5199;&#x4E00;&#x4E2A;<code>external</code>&#x6269;&#x5C55;&#xFF1A;</p>
+<pre><code class="lang-js">$.fn.external = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// return&#x8FD4;&#x56DE;&#x7684;each()&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x652F;&#x6301;&#x94FE;&#x5F0F;&#x8C03;&#x7528;:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.filter(<span class="hljs-string">&apos;a&apos;</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// &#x6CE8;&#x610F;: each()&#x5185;&#x90E8;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;this&#x7ED1;&#x5B9A;&#x4E3A;DOM&#x672C;&#x8EAB;!</span>
+        <span class="hljs-keyword">var</span> a = $(<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">var</span> url = a.attr(<span class="hljs-string">&apos;href&apos;</span>);
+        <span class="hljs-keyword">if</span> (url &amp;&amp; (url.indexOf(<span class="hljs-string">&apos;http://&apos;</span>)===<span class="hljs-number">0</span> || url.indexOf(<span class="hljs-string">&apos;https://&apos;</span>)===<span class="hljs-number">0</span>)) {
+            a.attr(<span class="hljs-string">&apos;href&apos;</span>, <span class="hljs-string">&apos;#0&apos;</span>)
+             .removeAttr(<span class="hljs-string">&apos;target&apos;</span>)
+             .append(<span class="hljs-string">&apos; &lt;i class=&quot;uk-icon-external-link&quot;&gt;&lt;/i&gt;&apos;</span>)
+             .click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">if</span>(confirm(<span class="hljs-string">&apos;&#x4F60;&#x786E;&#x5B9A;&#x8981;&#x524D;&#x5F80;&apos;</span> + url + <span class="hljs-string">&apos;&#xFF1F;&apos;</span>)) {
+                    <span class="hljs-built_in">window</span>.open(url);
+                }
+            });
+        }
+    });
+}
+</code></pre>
+<p>&#x5BF9;&#x5982;&#x4E0B;&#x7684;HTML&#x7ED3;&#x6784;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- HTML&#x7ED3;&#x6784; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;test-external&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5982;&#x4F55;&#x5B66;&#x4E60;<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://jquery.com&quot;</span>&gt;</span>jQuery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&#xFF1F;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x8981;&#x5B66;&#x4E60;<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/wiki/1022910821149312&quot;</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&#xFF0C;&#x5E76;&#x4E86;&#x89E3;&#x57FA;&#x672C;&#x7684;<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://developer.mozilla.org/en-US/docs/Web/HTML&quot;</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
+2020-09-27 20:01:50
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.8 AJAX.html" class="navigation navigation-prev " aria-label="Previous page: 5.8 AJAX">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../01.基本语法.html" class="navigation navigation-next " aria-label="Next page: 01.基本语法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.9 扩展","level":"1.2.8.1.2.9","depth":5,"next":{"title":"01.基本语法","level":"1.2.8.1.3","depth":4,"path":"roccoshi_note/07-前端学习/01.Javascript/01.基本语法.md","ref":"roccoshi_note/07-前端学习/01.Javascript/01.基本语法.md","articles":[]},"previous":{"title":"5.8 AJAX","level":"1.2.8.1.2.8","depth":5,"path":"roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.8 AJAX.md","ref":"roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.8 AJAX.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/07-前端学习/01.Javascript/05.jQuery/5.9 扩展.md","mtime":"2020-09-27T12:01:50.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-27T12:02:28.940Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
