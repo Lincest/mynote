@@ -166,4 +166,5 @@
       * [1.3 [BX]和loop指令](roccoshi_note/10-微机原理/01. 汇编语言-王爽/1.3 [BX]和loop指令.md)
   - [11-数据库](roccoshi_note/11-数据库/README.md)
     - [01. 关系模型](roccoshi_note/11-数据库/01. 关系模型/README.md)
-* [Untitled](Untitled.md)
+      * [1.1 关系代数](roccoshi_note/11-数据库/01. 关系模型/1.1 关系代数.md)
+      * [1.2 关系演算](roccoshi_note/11-数据库/01. 关系模型/1.2 关系演算.md)
