@@ -4,5 +4,5 @@
 
 emmet语法速查 : https://docs.emmet.io/cheat-sheet/
 
-[本地](E:\Documents\Text\markUse\Emmet语法速查\Emmet.pdf)
+[本地](file:///E:/Documents/Text/markUse/Emmet%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5/Emmet.pdf)
 
