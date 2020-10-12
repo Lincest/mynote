@@ -161,6 +161,8 @@
     - [05.webpack](roccoshi_note/07-前端学习/05.webpack/README.md)
       * [01.webpack简介](roccoshi_note/07-前端学习/05.webpack/01.webpack简介.md)
     - [06.基础css复习](roccoshi_note/07-前端学习/06.基础css复习/README.md)
+      * [01. 基本属性](roccoshi_note/07-前端学习/06.基础css复习/01. 基本属性.md)
+      * [02. 复合选择器](roccoshi_note/07-前端学习/06.基础css复习/02. 复合选择器.md)
     * [Emmet语法](roccoshi_note/07-前端学习/Emmet语法.md)
   - [08-Flask学习](roccoshi_note/08-Flask学习/README.md)
     * [01.pipenv环境搭建](roccoshi_note/08-Flask学习/01.pipenv环境搭建.md)
