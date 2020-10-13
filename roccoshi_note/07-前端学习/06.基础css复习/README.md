@@ -8,3 +8,44 @@
 | 外部样式表 | `<link rel="stylesheet" href="./css/xxx.css">` |
 | 行内样式表 | `<div style="color:red; text-align:center;">`  |
 
+## css的三大特性
+
+**层叠性, 继承性, 优先级**
+
+层叠性 : “就近原则” 
+
+继承性  : 子元素会继承父元素的属性
+
+关于行高的继承 : 
+
+```css
+body {
+    font: 12px/1.5 Microsoft YaHei;
+    /*
+    表示12px字体大小, 1.5em的行高 
+    子元素会根据自己的文字大小自动调整行高
+    */
+}
+```
+
+#### 优先级
+
+低 -> 高
+
+| 选择器        | 权重 |
+| ------------- | ---- |
+| 继承 / *      | 0000 |
+| 元素选择器    | 0001 |
+| 类/伪类选择器 | 0010 |
+| ID选择器      | 0100 |
+| 行内样式style | 1000 |
+| !important    | ∞    |
+
+`!important`
+
+```css
+div {
+    color: red!important;
+}
+```
+
