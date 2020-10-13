@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>06.基础css复习 · roccoshi-note</title>
+        <title>05. CSS浮动 · roccoshi-note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01. 基本属性.html" />
+    <link rel="next" href="../Emmet语法.html" />
     
     
-    <link rel="prev" href="../05.webpack/01.webpack简介.html" />
+    <link rel="prev" href="04. 盒子模型.html" />
     
 
     </head>
@@ -2384,7 +2384,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.8.6" data-path="./">
+        <li class="chapter " data-level="1.2.8.6" data-path="./">
             
                 <a href="./">
             
@@ -2450,7 +2450,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8.6.5" data-path="05. CSS浮动.html">
+        <li class="chapter active" data-level="1.2.8.6.5" data-path="05. CSS浮动.html">
             
                 <a href="05. CSS浮动.html">
             
@@ -2855,7 +2855,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >06.基础css复习</a>
+        <a href="../../.." >05. CSS浮动</a>
     </h1>
 </div>
 
@@ -2870,84 +2870,139 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;"><b></b>css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;"><b></b>css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><blockquote>
-<p> &#x4E0D;&#x5168;, &#x4EC5;&#x8BB0;&#x5F55;&#x4EE5;&#x524D;&#x7528;&#x7684;&#x4E0D;&#x719F;&#x7684;</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#05-css&#x6D6E;&#x52A8;"><b></b>05. CSS&#x6D6E;&#x52A8;</a></li><ul><li><span class="title-icon "></span><a href="#1--&#x6D6E;&#x52A8;&#x7279;&#x6027;"><b></b>1 | &#x6D6E;&#x52A8;&#x7279;&#x6027;</a></li><ul><li><span class="title-icon "></span><a href="#1-1--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41;--&#x8131;&#x6807;-"><b></b>1-1 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41; ( &#x8131;&#x6807; )</a></li><li><span class="title-icon "></span><a href="#1-2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;"><b></b>1-2 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;</a></li></ul><li><span class="title-icon "></span><a href="#2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;"><b></b>2 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#3--&#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;"><b></b>3 | &#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#4--&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;"><b></b>4 | &#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#4-1--&#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;"><b></b>4-1 | &#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#4-2--&#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow"><b></b>4-2 | &#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow</a></li><li><span class="title-icon "></span><a href="#4-3--after&#x4F2A;&#x5143;&#x7D20;"><b></b>4-3 | :after&#x4F2A;&#x5143;&#x7D20;</a></li><li><span class="title-icon "></span><a href="#44--&#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;"><b></b>4.4 | &#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;</a></li></ul></ul></ul></div><a href="#05-css&#x6D6E;&#x52A8;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="05-css&#x6D6E;&#x52A8;"><a name="05-css&#x6D6E;&#x52A8;" class="anchor-navigation-ex-anchor" href="#05-css&#x6D6E;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>05. CSS&#x6D6E;&#x52A8;</h1>
+<blockquote>
+<p>&#x7F51;&#x9875;&#x5E03;&#x5C40;&#x7B2C;&#x4E00;&#x51C6;&#x5219; : &#x591A;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;<strong>&#x7EB5;&#x5411;&#x6392;&#x5217;&#x627E;&#x6807;&#x51C6;&#x6D41;</strong>, &#x591A;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x6A2A;&#x5411;&#x6392;&#x5217;&#x627E;&#x6D6E;&#x52A8; ( float )</p>
 </blockquote>
-<h2 id="css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;"><a name="css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>css&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">&#x79CD;&#x7C7B;</th>
-<th style="text-align:center">&#x5F15;&#x5165;&#x65B9;&#x5F0F;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;</td>
-<td style="text-align:center"><code>&lt;head&gt;</code>&#x4E2D;<code>&lt;style&gt;</code>&#x6807;&#x7B7E;</td>
-</tr>
-<tr>
-<td style="text-align:center">&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x8868;</td>
-<td style="text-align:center"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/xxx.css&quot;&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align:center">&#x884C;&#x5185;&#x6837;&#x5F0F;&#x8868;</td>
-<td style="text-align:center"><code>&lt;div style=&quot;color:red; text-align:center;&quot;&gt;</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;"><a name="css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>css&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;</h2>
-<p><strong>&#x5C42;&#x53E0;&#x6027;, &#x7EE7;&#x627F;&#x6027;, &#x4F18;&#x5148;&#x7EA7;</strong></p>
-<p>&#x5C42;&#x53E0;&#x6027; : &#x201C;&#x5C31;&#x8FD1;&#x539F;&#x5219;&#x201D; </p>
-<p>&#x7EE7;&#x627F;&#x6027;  : &#x5B50;&#x5143;&#x7D20;&#x4F1A;&#x7EE7;&#x627F;&#x7236;&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;</p>
-<p>&#x5173;&#x4E8E;&#x884C;&#x9AD8;&#x7684;&#x7EE7;&#x627F; : </p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">font</span>: <span class="hljs-number">12px</span>/<span class="hljs-number">1.5</span> Microsoft YaHei;
-    <span class="hljs-comment">/*
-    &#x8868;&#x793A;12px&#x5B57;&#x4F53;&#x5927;&#x5C0F;, 1.5em&#x7684;&#x884C;&#x9AD8; 
-    &#x5B50;&#x5143;&#x7D20;&#x4F1A;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x6587;&#x5B57;&#x5927;&#x5C0F;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x884C;&#x9AD8;
-    */</span>
+<h2 id="1--&#x6D6E;&#x52A8;&#x7279;&#x6027;"><a name="1--&#x6D6E;&#x52A8;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#1--&#x6D6E;&#x52A8;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1 | &#x6D6E;&#x52A8;&#x7279;&#x6027;</h2>
+<h3 id="1-1--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41;--&#x8131;&#x6807;-"><a name="1-1--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41;--&#x8131;&#x6807;-" class="anchor-navigation-ex-anchor" href="#1-1--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41;--&#x8131;&#x6807;-"><i class="fa fa-link" aria-hidden="true"></i></a>1-1 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x8131;&#x79BB;&#x6807;&#x51C6;&#x6D41; ( &#x8131;&#x6807; )</h3>
+<blockquote>
+<p>&#x6D6E;&#x52A8;&#x7684;&#x76D2;&#x5B50;<strong>&#x4E0D;&#x518D;&#x4FDD;&#x7559;&#x539F;&#x5148;&#x7684;&#x4F4D;&#x7F6E;</strong></p>
+</blockquote>
+<p>&#x6D6E;&#x52A8;&#x7684;&#x76D2;&#x5B50;&#x4F1A;&#x538B;&#x4F4F;&#x6807;&#x51C6;&#x6D41;&#x7684;&#x76D2;&#x5B50;</p>
+<h3 id="1-2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;"><a name="1-2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#1-2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1-2 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x5177;&#x6709;&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;&#x7684;&#x7279;&#x6027;</h3>
+<blockquote>
+<p><strong>&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#x90FD;&#x53EF;&#x4EE5;&#x6D6E;&#x52A8;</strong>, &#x4E0D;&#x7BA1;&#x539F;&#x5148;&#x662F;&#x4EC0;&#x4E48;&#x6A21;&#x5F0F;&#x7684;&#x5143;&#x7D20;, &#x6DFB;&#x52A0;&#x6D6E;&#x52A8;&#x4E4B;&#x540E;&#x90FD;&#x5177;&#x6709;<strong>&#x884C;&#x5185;&#x5757;&#x5143;&#x7D20;</strong>&#x76F8;&#x4F3C;&#x7684;&#x7279;&#x6027;</p>
+</blockquote>
+<ul>
+<li><p>&#x5982;&#x679C;&#x5757;&#x7EA7;&#x76D2;&#x5B50;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x5BBD;&#x5EA6;, &#x9ED8;&#x8BA4;&#x5BBD;&#x5EA6;&#x548C;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x4E00;&#x6837;&#x5BBD;, &#x4F46;&#x662F;&#x6DFB;&#x52A0;&#x6D6E;&#x52A8;&#x540E;, &#x5B83;&#x7684;&#x5927;&#x5C0F;&#x6839;&#x636E;&#x5185;&#x5BB9;&#x6765;&#x51B3;&#x5B9A;</p>
+</li>
+<li><p>&#x6D6E;&#x52A8;&#x7684;&#x76D2;&#x5B50;&#x4E2D;&#x95F4;&#x662F;&#x6CA1;&#x6709;&#x7F1D;&#x9699;&#x7684;, &#x662F;&#x7D27;&#x6328;&#x5728;&#x4E00;&#x8D77;&#x7684;</p>
+</li>
+</ul>
+<h2 id="2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;"><a name="2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#2--&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>2 | &#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x642D;&#x914D;&#x6807;&#x51C6;&#x6D41;&#x7236;&#x7EA7;&#x4F7F;&#x7528;</h2>
+<p>&#x4E3A;&#x4E86;&#x7EA6;&#x675F;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;, &#x6211;&#x4EEC;&#x7F51;&#x9875;&#x5E03;&#x5C40;&#x4E00;&#x822C;&#x91C7;&#x53D6;&#x7684;&#x7B56;&#x7565;&#x662F; : </p>
+<blockquote>
+<p>&#x5148;&#x7528;&#x6807;&#x51C6;&#x6D41;&#x7684;&#x7236;&#x5143;&#x7D20;&#x6392;&#x5217;&#x4E0A;&#x4E0B;&#x4F4D;&#x7F6E;, &#x4E4B;&#x540E;&#x5185;&#x90E8;&#x5B50;&#x5143;&#x7D20;&#x91C7;&#x53D6;&#x6D6E;&#x52A8;&#x6392;&#x5217;&#x5DE6;&#x53F3;&#x4F4D;&#x7F6E;, &#x7B26;&#x5408;&#x7F51;&#x9875;&#x5E03;&#x5C40;&#x7B2C;&#x4E00;&#x51C6;&#x5219;</p>
+</blockquote>
+<p>ps : &#x6D6E;&#x52A8;&#x53EA;&#x4F1A;&#x5F71;&#x54CD;&#x4E4B;&#x540E;&#x7684;&#x6807;&#x51C6;&#x6D41;, &#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x524D;&#x9762;&#x7684;&#x6807;&#x51C6;&#x6D41;</p>
+<h2 id="3--&#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;"><a name="3--&#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#3--&#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>3 | &#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x5B9E;&#x73B0;</h2>
+<p>&#x4EE3;&#x7801;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Float<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    * {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.top</span> {
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+        <span class="hljs-attribute">background-color</span>: gray;
+    }
+
+    <span class="hljs-selector-class">.banner</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">980px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">150px</span>;
+        <span class="hljs-attribute">background-color</span>: gray;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> auto;
+    }
+
+    <span class="hljs-selector-class">.box</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">980px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+        <span class="hljs-attribute">background-color</span>: pink;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    }
+
+    <span class="hljs-selector-class">.box</span> <span class="hljs-selector-tag">li</span> {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">237px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+        <span class="hljs-attribute">list-style</span>: none;
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">background-color</span>: gray;
+    }
+
+    <span class="hljs-selector-class">.box</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-child(4)</span> {
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-selector-class">.footer</span> {
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+        <span class="hljs-attribute">background-color</span>: gray;
+        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;banner&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x6548;&#x679C; : </p>
+<center><img src="https://youpai.roccoshi.top/img/20201013192613.png" style="width:100%"><br><div style="border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;    padding: 2px;"></div> </center>
+
+<h2 id="4--&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;"><a name="4--&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#4--&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4 | &#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x65B9;&#x6CD5;</h2>
+<h3 id="4-1--&#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;"><a name="4-1--&#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#4-1--&#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4-1 | &#x989D;&#x5916;&#x6807;&#x7B7E;&#x6CD5;</h3>
+<p>&#x5728;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;, &#x5E76;&#x7ED9;&#x4E0E;<code>clear:both</code>&#x7684;css&#x5C5E;&#x6027;</p>
+<h3 id="4-2--&#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow"><a name="4-2--&#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow" class="anchor-navigation-ex-anchor" href="#4-2--&#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow"><i class="fa fa-link" aria-hidden="true"></i></a>4-2 | &#x7236;&#x7EA7;&#x6DFB;&#x52A0;overflow</h3>
+<p>&#x7236;&#x7EA7;&#x6DFB;&#x52A0;<code>overflow:hidden</code></p>
+<h3 id="4-3--after&#x4F2A;&#x5143;&#x7D20;"><a name="4-3--after&#x4F2A;&#x5143;&#x7D20;" class="anchor-navigation-ex-anchor" href="#4-3--after&#x4F2A;&#x5143;&#x7D20;"><i class="fa fa-link" aria-hidden="true"></i></a>4-3 | <code>:after</code>&#x4F2A;&#x5143;&#x7D20;</h3>
+<pre><code class="lang-css">.clearfix:after {
+    content: &quot;&quot;;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix { /* &#x7167;&#x987E;ie6, 7 */
+    *zoom: 1;
 }
 </code></pre>
-<h4 id="&#x4F18;&#x5148;&#x7EA7;"><a name="&#x4F18;&#x5148;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x5148;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x5148;&#x7EA7;</h4>
-<p>&#x4F4E; -&gt; &#x9AD8;</p>
-<table>
-<thead>
-<tr>
-<th>&#x9009;&#x62E9;&#x5668;</th>
-<th>&#x6743;&#x91CD;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x7EE7;&#x627F; / *</td>
-<td>0000</td>
-</tr>
-<tr>
-<td>&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;</td>
-<td>0001</td>
-</tr>
-<tr>
-<td>&#x7C7B;/&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;</td>
-<td>0010</td>
-</tr>
-<tr>
-<td>ID&#x9009;&#x62E9;&#x5668;</td>
-<td>0100</td>
-</tr>
-<tr>
-<td>&#x884C;&#x5185;&#x6837;&#x5F0F;style</td>
-<td>1000</td>
-</tr>
-<tr>
-<td>!important</td>
-<td>&#x221E;</td>
-</tr>
-</tbody>
-</table>
-<p><code>!important</code></p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> {
-    <span class="hljs-attribute">color</span>: red<span class="hljs-meta">!important</span>;
+<p>&#x4E4B;&#x540E;&#x5728;&#x9700;&#x8981;&#x6E05;&#x695A;&#x6D6E;&#x52A8;&#x7684;&#x5143;&#x7D20;&#x6DFB;&#x52A0;clearfix&#x7C7B;&#x540D;&#x5373;&#x53EF;</p>
+<h3 id="44--&#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;"><a name="44--&#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;" class="anchor-navigation-ex-anchor" href="#44--&#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4 | &#x53CC;&#x4F2A;&#x5143;&#x7D20;&#x6E05;&#x9664;&#x6D6E;&#x52A8;</h3>
+<pre><code class="lang-css">.clearfix:before, .clearfix:after {
+    content: &quot;&quot;;
+    display: none;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix { /* &#x7167;&#x987E;ie6, 7 */
+    *zoom: 1;
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
@@ -2979,12 +3034,12 @@
 
             
                 
-                <a href="../05.webpack/01.webpack简介.html" class="navigation navigation-prev " aria-label="Previous page: 01.webpack简介">
+                <a href="04. 盒子模型.html" class="navigation navigation-prev " aria-label="Previous page: 04. 盒子模型">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="01. 基本属性.html" class="navigation navigation-next " aria-label="Next page: 01. 基本属性">
+                <a href="../Emmet语法.html" class="navigation navigation-next " aria-label="Next page: Emmet语法">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2995,7 +3050,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"06.基础css复习","level":"1.2.8.6","depth":3,"next":{"title":"01. 基本属性","level":"1.2.8.6.1","depth":4,"path":"roccoshi_note/07-前端学习/06.基础css复习/01. 基本属性.md","ref":"roccoshi_note/07-前端学习/06.基础css复习/01. 基本属性.md","articles":[]},"previous":{"title":"01.webpack简介","level":"1.2.8.5.1","depth":4,"path":"roccoshi_note/07-前端学习/05.webpack/01.webpack简介.md","ref":"roccoshi_note/07-前端学习/05.webpack/01.webpack简介.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/07-前端学习/06.基础css复习/README.md","mtime":"2020-10-13T13:15:34.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-13T13:16:22.931Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05. CSS浮动","level":"1.2.8.6.5","depth":4,"next":{"title":"Emmet语法","level":"1.2.8.7","depth":3,"path":"roccoshi_note/07-前端学习/Emmet语法.md","ref":"roccoshi_note/07-前端学习/Emmet语法.md","articles":[]},"previous":{"title":"04. 盒子模型","level":"1.2.8.6.4","depth":4,"path":"roccoshi_note/07-前端学习/06.基础css复习/04. 盒子模型.md","ref":"roccoshi_note/07-前端学习/06.基础css复习/04. 盒子模型.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/07-前端学习/06.基础css复习/05. CSS浮动.md","mtime":"2020-10-13T13:15:34.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-13T13:16:22.931Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
