@@ -189,3 +189,4 @@
       * [1.1 关系代数](roccoshi_note/11-数据库/01. 关系模型/1.1 关系代数.md)
       * [1.2 关系演算](roccoshi_note/11-数据库/01. 关系模型/1.2 关系演算.md)
     - [02. SQL语言](roccoshi_note/11-数据库/02. SQL语言/README.md)
+      * [01. 基础语句](roccoshi_note/11-数据库/02. SQL语言/01. 基础语句.md)
