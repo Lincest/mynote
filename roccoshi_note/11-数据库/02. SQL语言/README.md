@@ -15,5 +15,15 @@
 - 投影
 - 如果[DISTINCT], 则去重
 
+## mysql的登录方法
+
+```sql
+mysql -u root -p -- 登录, 输入用户密码
+
+show databases; -- 显示所有数据库
+
+use xxx; -- 切换数据库
+```
+
 
 

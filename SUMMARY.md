@@ -169,6 +169,7 @@
       * [06. 一些图片操作](roccoshi_note/07-前端学习/06.基础css复习/06. 一些图片操作.md)
       * [07. css定位](roccoshi_note/07-前端学习/06.基础css复习/07. css定位.md)
       * [08. css其他技巧](roccoshi_note/07-前端学习/06.基础css复习/08. css其他技巧.md)
+      * [09. html5和css3新特性](roccoshi_note/07-前端学习/06.基础css复习/09. html5和css3新特性.md)
     * [Emmet语法](roccoshi_note/07-前端学习/Emmet语法.md)
   - [08-Flask学习](roccoshi_note/08-Flask学习/README.md)
     * [01.pipenv环境搭建](roccoshi_note/08-Flask学习/01.pipenv环境搭建.md)
@@ -196,3 +197,4 @@
       * [1.2 关系演算](roccoshi_note/11-数据库/01. 关系模型/1.2 关系演算.md)
     - [02. SQL语言](roccoshi_note/11-数据库/02. SQL语言/README.md)
       * [01. 基础语句](roccoshi_note/11-数据库/02. SQL语言/01. 基础语句.md)
+      * [02. 聚集函数运算](roccoshi_note/11-数据库/02. SQL语言/02. 聚集函数运算.md)
