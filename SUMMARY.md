@@ -203,3 +203,5 @@
     * [01. jupyter notebook的使用](roccoshi_note/12-机器学习/01. jupyter notebook的使用.md)
   - [13 OOP](roccoshi_note/13-OOP/README.md)
     * [01. 初步知识](roccoshi_note/13-OOP/01. 初步知识.md)
+    * [02. 类和对象的特性](roccoshi_note/13-OOP/02. 类和对象的特性.md)
+    * [03. 使用类和对象](roccoshi_note/13-OOP/03. 使用类和对象.md)
