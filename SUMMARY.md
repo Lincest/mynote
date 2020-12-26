@@ -199,6 +199,7 @@
     - [02. SQL语言](roccoshi_note/11-数据库/02. SQL语言/README.md)
       * [01. 基础查询语句](roccoshi_note/11-数据库/02. SQL语言/01. 基础查询语句.md)
       * [02. 聚集函数和GROUP](roccoshi_note/11-数据库/02. SQL语言/02. 聚集函数和GROUP.md)
+      * [03. 「复习」学校数据库ppt第三章sql语句](roccoshi_note/11-数据库/02. SQL语言/03. 「复习」学校数据库ppt第三章sql语句.md)
   - 12-机器学习
     * [01. jupyter notebook的使用](roccoshi_note/12-机器学习/01. jupyter notebook的使用.md)
   - [13 OOP](roccoshi_note/13-OOP/README.md)
