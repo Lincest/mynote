@@ -183,6 +183,8 @@
       * [1.1 动态规划](roccoshi_note/09-算法/01. 算法笔记/1.1 动态规划.md)
     - [02. STL使用](roccoshi_note/09-算法/02. STL使用/README.md)
       * [STL参考资料](roccoshi_note/09-算法/02. STL使用/STL参考资料.md)
+    - 03. 算法「第四版」
+      * [3.1 算法分析与union-find算法](roccoshi_note/09-算法/03. 算法「第四版」/3.1 算法分析与union-find算法.md)
     * [常用的模板](roccoshi_note/09-算法/常用的模板.md)
   - [10-微机原理](roccoshi_note/10-微机原理/README.md)
     - [01. 汇编语言-王爽](roccoshi_note/10-微机原理/01. 汇编语言-王爽/README.md)
@@ -200,6 +202,7 @@
       * [01. 基础查询语句](roccoshi_note/11-数据库/02. SQL语言/01. 基础查询语句.md)
       * [02. 聚集函数和GROUP](roccoshi_note/11-数据库/02. SQL语言/02. 聚集函数和GROUP.md)
       * [03. 「复习」学校数据库ppt第三章sql语句](roccoshi_note/11-数据库/02. SQL语言/03. 「复习」学校数据库ppt第三章sql语句.md)
+    * [03. 数据库安全-赋权](roccoshi_note/11-数据库/03. 数据库安全-赋权.md)
   - 12-机器学习
     * [01. jupyter notebook的使用](roccoshi_note/12-机器学习/01. jupyter notebook的使用.md)
   - [13 OOP](roccoshi_note/13-OOP/README.md)
