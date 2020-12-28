@@ -185,6 +185,8 @@
       * [STL参考资料](roccoshi_note/09-算法/02. STL使用/STL参考资料.md)
     - 03. 算法「第四版」
       * [3.1 算法分析与union-find算法](roccoshi_note/09-算法/03. 算法「第四版」/3.1 算法分析与union-find算法.md)
+      * [3.2 归并排序](roccoshi_note/09-算法/03. 算法「第四版」/3.2 归并排序.md)
+      * [3.3 快速排序](roccoshi_note/09-算法/03. 算法「第四版」/3.3 快速排序.md)
     * [常用的模板](roccoshi_note/09-算法/常用的模板.md)
   - [10-微机原理](roccoshi_note/10-微机原理/README.md)
     - [01. 汇编语言-王爽](roccoshi_note/10-微机原理/01. 汇编语言-王爽/README.md)
