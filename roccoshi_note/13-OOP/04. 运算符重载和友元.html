@@ -3335,8 +3335,26 @@ istream &amp; <span class="hljs-keyword">operator</span> &gt;&gt; (istream &amp;
     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
+<pre><code class="lang-cpp"><span class="hljs-keyword">class</span> a {
+<span class="hljs-keyword">private</span>:
+    <span class="hljs-keyword">int</span> x;
+<span class="hljs-keyword">public</span>:
+    a(<span class="hljs-keyword">int</span> x):x(x){}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>{
+        <span class="hljs-built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">operator</span> <span class="hljs-title">int</span> <span class="hljs-params">()</span> </span>{<span class="hljs-keyword">return</span> x;}
+};
+
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span> <span class="hljs-params">()</span> </span>{
+    a obj = <span class="hljs-number">10</span>; <span class="hljs-comment">// &#x8C03;&#x7528;&#x8F6C;&#x6362;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; obj &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x9690;&#x5F0F;&#x8C03;&#x7528;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x51FD;&#x6570;</span>
+}
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; note.roccoshi.top 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">update time&#xFF1A;
-2020-12-27 10:31:09
+2020-12-28 14:31:36
 </span></footer>
                                 
                                 </section>
@@ -3380,7 +3398,7 @@ istream &amp; <span class="hljs-keyword">operator</span> &gt;&gt; (istream &amp;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"04. 运算符重载和友元","level":"1.2.14.4","depth":3,"next":{"title":"05. 继承与派生","level":"1.2.14.5","depth":3,"path":"roccoshi_note/13-OOP/05. 继承与派生.md","ref":"roccoshi_note/13-OOP/05. 继承与派生.md","articles":[]},"previous":{"title":"03. 使用类和对象","level":"1.2.14.3","depth":3,"path":"roccoshi_note/13-OOP/03. 使用类和对象.md","ref":"roccoshi_note/13-OOP/03. 使用类和对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/13-OOP/04. 运算符重载和友元.md","mtime":"2020-12-27T02:31:09.731Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-27T02:31:48.295Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"04. 运算符重载和友元","level":"1.2.14.4","depth":3,"next":{"title":"05. 继承与派生","level":"1.2.14.5","depth":3,"path":"roccoshi_note/13-OOP/05. 继承与派生.md","ref":"roccoshi_note/13-OOP/05. 继承与派生.md","articles":[]},"previous":{"title":"03. 使用类和对象","level":"1.2.14.3","depth":3,"path":"roccoshi_note/13-OOP/03. 使用类和对象.md","ref":"roccoshi_note/13-OOP/03. 使用类和对象.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","anchor-navigation-ex","code","katex","tbfed-pagefooter","expandable-chapters-small","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy note.roccoshi.top 2020","modify_label":"update time：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"plugins-notshow":["back-to-top-button"],"theme":"default","author":"roccoshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"roccoshi-note","language":"zh-hans","gitbook":"*","description":"hello world"},"file":{"path":"roccoshi_note/13-OOP/04. 运算符重载和友元.md","mtime":"2020-12-28T06:31:36.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-28T06:32:20.815Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
