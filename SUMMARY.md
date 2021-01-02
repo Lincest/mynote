@@ -187,7 +187,7 @@
       * [3.1 算法分析与union-find算法](roccoshi_note/09-算法/03. 算法「第四版」/3.1 算法分析与union-find算法.md)
       * [3.2 归并排序](roccoshi_note/09-算法/03. 算法「第四版」/3.2 归并排序.md)
       * [3.3 快速排序](roccoshi_note/09-算法/03. 算法「第四版」/3.3 快速排序.md)
-      * [3.4 优先队列(堆)](roccoshi_note/09-算法/03. 算法「第四版」/3.4 优先队列(堆).md)
+      * [3.4 优先队列_堆](roccoshi_note/09-算法/03. 算法「第四版」/3.4 优先队列_堆.md)
       * [3.5 符号表(map)](roccoshi_note/09-算法/03. 算法「第四版」/3.5 符号表(map).md)
       * [3.6 二叉查找树(BST)](roccoshi_note/09-算法/03. 算法「第四版」/3.6 二叉查找树(BST).md)
       * [3.7 最小生成树_Prim_Kruskal](roccoshi_note/09-算法/03. 算法「第四版」/3.7 最小生成树_Prim_Kruskal.md)
