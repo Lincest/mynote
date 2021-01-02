@@ -183,7 +183,7 @@
       * [1.1 动态规划](roccoshi_note/09-算法/01. 算法笔记/1.1 动态规划.md)
     - [02. STL使用](roccoshi_note/09-算法/02. STL使用/README.md)
       * [STL参考资料](roccoshi_note/09-算法/02. STL使用/STL参考资料.md)
-    - 03. 算法「第四版」
+    - [03. 算法「第四版」](roccoshi_note/09-算法/03. 算法「第四版」/README.md)
       * [3.1 算法分析与union-find算法](roccoshi_note/09-算法/03. 算法「第四版」/3.1 算法分析与union-find算法.md)
       * [3.2 归并排序](roccoshi_note/09-算法/03. 算法「第四版」/3.2 归并排序.md)
       * [3.3 快速排序](roccoshi_note/09-算法/03. 算法「第四版」/3.3 快速排序.md)
