@@ -215,6 +215,7 @@
     * [05. 数据库设计](roccoshi_note/11-数据库/05. 数据库设计.md)
     * [06. 关系数据理论](roccoshi_note/11-数据库/06. 关系数据理论.md)
     * [07. 嵌入式sql](roccoshi_note/11-数据库/07. 嵌入式sql.md)
+    * [08. 事务](roccoshi_note/11-数据库/08. 事务.md)
   - 12-机器学习
     * [01. jupyter notebook的使用](roccoshi_note/12-机器学习/01. jupyter notebook的使用.md)
   - [13 OOP](roccoshi_note/13-OOP/README.md)
